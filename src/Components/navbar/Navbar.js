@@ -1,5 +1,6 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
-import './navbar.css'
+import './navbar.css';
+import '../../index.css';
 
 
 
@@ -33,6 +34,7 @@ const Navbar = () => {
               document.querySelector(".navbar").classList.toggle("visible");
               document.querySelector(".navbutton").classList.toggle("visible");
               document.querySelector(".dark-button").classList.toggle("visible");
+              document.querySelector(".container").classList.toggle("visible");
             }}
             className="navbutton"
           >
