@@ -11,6 +11,7 @@
   padding: 20px;
   transition: left 0.5s ease-in-out;
   z-index: 1;
+  transition: 1s;
   }
 
   .navbar.visible {
@@ -18,28 +19,21 @@
   }
   
   .navbar a {
-    float: left;
-    display: block;
-    color: #00FFA9;
-    text-align: center;
-    padding: 14px 6px;
-    margin-right: 15px;
-    text-decoration: none;
-    font-size: 17px;
-    border-radius: 15px;
+position: relative;
+display: block;
+padding: 10px 30px;
+border: 2px solid #00aeff;
+text-transform: uppercase;
+font-size: 18px;
+letter-spacing: 4px;
+color: #00aeff;
+text-decoration: none;
   }
-  
 
-  
-  .navbar a.split {
-    background-color: #28332A;
-    float: right;
-    color: #00FFA9;
-    }
 
 a.active {
-  color: #2E3631;
-  background-color: #00FFA9;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .navbar a:hover {
@@ -48,19 +42,11 @@ a.active {
   transition: 0.5s ease-in;
 }
 
-.box:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px #00FFA9;
-  }
-    
-  /* Slide-out box */
 
-    .slide-right-button {
+.navbutton {
       position: relative;
       bottom: 0;
-      left: 500px;
-      top: 370px;
+      left: 0;
       width: 100px;
       height: 50px;
       background-color: green;
@@ -71,12 +57,23 @@ a.active {
       cursor: pointer;
       border-radius: 5px;
       outline: none;
-      transition: transform 0.2s ease-in-out;
       box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+      transition: left 0.5s ease-in-out;
+  z-index: 2;
+  transition: 1s;
       }
     
-  .slide-right-button:hover {
+.navbutton:hover {
     transform: translateY(2px);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-  
+
+
+    
+    .navbutton.visible {
+      position: relative;
+      left: 250px;
+      transition: left 0.5s ease-in-out;
+  z-index: 2;
+  transition: 1s;
+    }

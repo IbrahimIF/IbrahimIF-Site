@@ -23,16 +23,17 @@ const Navbar = () => {
         <nav>
           <ul>
             <Link to="/" className={isLinkActive('/')}>Main</Link>
-            <Link to="/" className={isLinkActive('/')}>another</Link>
+            <Link to="/another" className={isLinkActive('/another')}>another</Link>
           </ul>
         </nav>
 
       </div>
       <button
-            onClick={() =>
-              document.querySelector(".navbar").classList.toggle("visible")
-            }
-            className="slide-right-button"
+            onClick={() =>{
+              document.querySelector(".navbar").classList.toggle("visible");
+              document.querySelector(".navbutton").classList.toggle("visible");
+            }}
+            className="navbutton"
           >
             Back
           </button>  
