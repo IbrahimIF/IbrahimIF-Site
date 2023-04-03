@@ -32,10 +32,20 @@ const Navbar = () => {
             onClick={() =>{
               document.querySelector(".navbar").classList.toggle("visible");
               document.querySelector(".navbutton").classList.toggle("visible");
+              document.querySelector(".dark-button").classList.toggle("visible");
             }}
             className="navbutton"
           >
             Back
+          </button>  
+
+          <button
+            onClick={() =>{
+              document.body.classList.toggle("dark-mode");
+            }}
+            className="dark-button"
+          >
+            darkmode
           </button>  
 
       <Outlet />
