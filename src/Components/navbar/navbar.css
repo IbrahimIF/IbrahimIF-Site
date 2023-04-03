@@ -1,0 +1,82 @@
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -2000px; /* Change this to adjust the initial position */
+  width: 200px; /* Change this to adjust the width of the box */
+  height: 820px;
+  background-color: rgba(51, 44, 44, 0.5); /* Change this to adjust the background color and transparency */
+  color: white;
+  padding: 20px;
+  transition: left 0.5s ease-in-out;
+  z-index: 1;
+  }
+
+  .navbar.visible {
+    left: 0;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #00FFA9;
+    text-align: center;
+    padding: 14px 6px;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 15px;
+  }
+  
+
+  
+  .navbar a.split {
+    background-color: #28332A;
+    float: right;
+    color: #00FFA9;
+    }
+
+a.active {
+  color: #2E3631;
+  background-color: #00FFA9;
+}
+
+.navbar a:hover {
+  background-color: #00FFA9;
+  color: #2E3631;
+  transition: 0.5s ease-in;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px #00FFA9;
+  }
+    
+  /* Slide-out box */
+
+    .slide-right-button {
+      position: relative;
+      bottom: 0;
+      left: 500px;
+      top: 370px;
+      width: 100px;
+      height: 50px;
+      background-color: green;
+      border: 2px solid white;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      outline: none;
+      transition: transform 0.2s ease-in-out;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+      }
+    
+  .slide-right-button:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  
