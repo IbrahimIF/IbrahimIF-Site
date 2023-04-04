@@ -1,6 +1,10 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 import './navbar.css';
 import '../../index.css';
+import Light from '../../Assets/Images/logoLight.png';
+import Dark from '../../Assets/Images/logoDark.png';
+
 
 
 
@@ -17,6 +21,8 @@ const Navbar = () => {
     }
   }
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  
   return (
     <>
       <div className="navbar" id="navbar"> {/*Navigation Bar*/}
@@ -44,6 +50,7 @@ const Navbar = () => {
           <button
             onClick={() =>{
               document.body.classList.toggle("dark-mode");
+              setIsDarkMode(!isDarkMode);
             }}
             className="dark-button"
           >

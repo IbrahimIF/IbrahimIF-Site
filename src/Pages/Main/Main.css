@@ -217,3 +217,37 @@
           text-transform: uppercase;
           letter-spacing: 5px;
         }
+
+
+
+        
+      
+      .button-container {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .plus {
+        position: relative;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        color: #1a1a1a;
+        background: #ed1c5b;
+        border-radius: 50%;
+        border: none;
+        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+        margin-right: 10px; /* Add spacing between the buttons */
+      }
+      
+      .plus:hover {
+        transform: rotate(45deg);
+        box-shadow: 0 0 1px 15px rgba(0, 0, 0, 0.25), 0 0 1px 30px rgba(255, 0, 0, 0.25),  0 0 1px 30px rgba(252, 0, 0, 0.625);
+      }
+      
+
+      .logo{
+        size: 20px;
+        width: 50px;
+      }
+        
