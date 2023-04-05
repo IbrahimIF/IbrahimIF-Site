@@ -1,83 +1,87 @@
+.logo{
+  size: 20px;
+  width: 50px;
+  padding-left: 50px;
+}
+
 .container2 {
-    width: 100%;
-    height: 100vh;
-    background: #232323;
+  width: 100%;
+  height: 100vh;
+  background: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  border-color: #000000;
+}
+
+  .box {
+    width: 250px;
+    height: 250px;
+    position: relative;
     display: flex;
     justify-content: center;
-    border-radius: 15px;
-    border-color: #363636;
-}
-  
-    .box {
-      width: 250px;
-      height: 250px;
+    flex-direction: column;
+  }
+
+    .title {
+      width: 100%;
       position: relative;
       display: flex;
-      justify-content: center;
-      flex-direction: column;
+      align-items: center;
+      height: 50px;
     }
-
-      .title {
-        width: 100%;
-        position: relative;
+      .block1 {
+        width: 0%;
+        height: inherit;
+        background: #000000;
+        position: absolute;
+        animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
         display: flex;
-        align-items: center;
-        height: 50px;
       }
-        .block1 {
-          width: 0%;
-          height: inherit;
-          background: #ffffff;
-          position: absolute;
-          animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-          display: flex;
-        }
-  
-        .Firsttext {
-          font-family: 'Poppins';
-          color: #fff;
-          font-size: 32px;
-          -webkit-animation: mainFadeIn 2s forwards;
-          -o-animation: mainFadeIn 2s forwards;
-          animation: mainFadeIn 2s forwards;
-          animation-delay: 1.6s;
-          opacity: 0;
-          display: flex;
-          align-items: baseline;
-          position: relative;
-        }
 
-      .role {
-        width: 100%;
-        position: relative;
+      .Firsttext {
+        font-family: 'Poppins';
+        color: #000000;
+        font-size: 32px;
+        -webkit-animation: mainFadeIn 2s forwards;
+        -o-animation: mainFadeIn 2s forwards;
+        animation: mainFadeIn 2s forwards;
+        animation-delay: 1.6s;
+        opacity: 0;
         display: flex;
-        align-items: center;
-        height: 30px;
-        margin-top: -10px;
+        align-items: baseline;
+        position: relative;
       }
-        .block {
-          width: 0%;
-          height: inherit;
-          background: #ffffff;
-          position: absolute;
-          animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-          animation-delay: 2s;
-          display: flex;
-        }
-  
-        .sectext {
-          animation: secFadeIn 2s forwards;
-          animation-delay: 3.2s;
-          opacity: 0;
-           font-weight: 400;
-          font-family: 'Lato';
-          color: #ffffff;
-          font-size: 12px;
-          text-transform: uppercase;
-          letter-spacing: 5px;
-        }
 
-  
+    .role {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      margin-top: -10px;
+    }
+      .block {
+        width: 0%;
+        height: inherit;
+        background: #000000;
+        position: absolute;
+        animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+        animation-delay: 2s;
+        display: flex;
+      }
+
+      .sectext {
+        animation: secFadeIn 2s forwards;
+        animation-delay: 3.2s;
+        opacity: 0;
+         font-weight: 400;
+        font-family: 'Lato';
+        color: #000000;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
   
   
   
@@ -135,119 +139,184 @@
     }
   }
 
+  /*button pfps*/
 
-
-/*Darkmode version*/
-
-.container2 {
-    width: 100%;
-    height: 100vh;
-    background: #e2e2e2;
-    display: flex;
-    justify-content: center;
-    border-radius: 15px;
-    border-color: #000000;
+.button-container {
+  display: flex;
+  flex-direction: row;
 }
-  
-    .box {
-      width: 250px;
-      height: 250px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
 
-      .title {
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 50px;
-      }
-        .block1 {
-          width: 0%;
-          height: inherit;
-          background: #000000;
-          position: absolute;
-          animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-          display: flex;
-        }
-  
-        .Firsttext {
-          font-family: 'Poppins';
-          color: #000000;
-          font-size: 32px;
-          -webkit-animation: mainFadeIn 2s forwards;
-          -o-animation: mainFadeIn 2s forwards;
-          animation: mainFadeIn 2s forwards;
-          animation-delay: 1.6s;
-          opacity: 0;
-          display: flex;
-          align-items: baseline;
-          position: relative;
-        }
+/*red pfps*/
 
-      .role {
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 30px;
-        margin-top: -10px;
-      }
-        .block {
-          width: 0%;
-          height: inherit;
-          background: #000000;
-          position: absolute;
-          animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-          animation-delay: 2s;
-          display: flex;
-        }
-  
-        .sectext {
-          animation: secFadeIn 2s forwards;
-          animation-delay: 3.2s;
-          opacity: 0;
-           font-weight: 400;
-          font-family: 'Lato';
-          color: #000000;
-          font-size: 12px;
-          text-transform: uppercase;
-          letter-spacing: 5px;
-        }
+.pfpRed {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  background: #000000;
+  border-radius: 50%;
+  border: none;
+  transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+  margin-right: 10px; /* Add spacing between the buttons */
+  }
+
+.pfpRed:hover {
+  transform: rotate(45deg);
+  box-shadow: 0 0 1px 5px rgba(58, 1, 1, 0.815), 0 0 1px 10px rgba(255, 0, 0, 0.426),  0 0 1px 15px rgba(252, 0, 0, 0.382);
+  }
+
+.pfpRed img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/*blue pfps*/
+
+.pfpBlue {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  background: #000000;
+  border-radius: 50%;
+  border: none;
+  transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+  margin-right: 10px; /* Add spacing between the buttons */
+  }
+
+.pfpBlue:hover {
+  transform: rotate(55deg);
+  box-shadow: 0 0 1px 5px rgba(7, 47, 223, 0.815), 0 0 1px 10px rgba(30, 5, 174, 0.426),  0 0 1px 15px rgba(38, 3, 144, 0.382);
+  }
+
+.pfpBlue img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
 
 
 
-        
-      
-      .button-container {
-        display: flex;
-        flex-direction: row;
-      }
-      
-      .plus {
-        position: relative;
-        z-index: 1;
-        width: 40px;
-        height: 40px;
-        color: #1a1a1a;
-        background: #ed1c5b;
-        border-radius: 50%;
-        border: none;
-        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
-        margin-right: 10px; /* Add spacing between the buttons */
-      }
-      
-      .plus:hover {
-        transform: rotate(45deg);
-        box-shadow: 0 0 1px 15px rgba(0, 0, 0, 0.25), 0 0 1px 30px rgba(255, 0, 0, 0.25),  0 0 1px 30px rgba(252, 0, 0, 0.625);
-      }
-      
+/*Yellow pfps*/
 
-      .logo{
-        size: 20px;
-        width: 50px;
-      }
-        
+.pfpYellow {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  background: #000000;
+  border-radius: 50%;
+  border: none;
+  transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+  margin-right: 10px; /* Add spacing between the buttons */
+  }
+
+.pfpYellow:hover {
+  transform: rotate(45deg);
+  box-shadow: 0 0 1px 5px rgba(255, 253, 123, 0.815), 0 0 1px 10px rgba(255, 253, 123, 0.426),  0 0 1px 15px rgba(255, 253, 123, 0.382);
+  }
+
+.pfpYellow img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/*Green pfps*/
+
+.pfpGreen {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  background: #000000;
+  border-radius: 50%;
+  border: none;
+  transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+  margin-right: 10px; /* Add spacing between the buttons */
+  }
+
+.pfpGreen:hover {
+  transform: rotate(45deg);
+  box-shadow: 0 0 1px 5px rgba(98, 255, 119, 0.815), 0 0 1px 10px rgba(87, 253, 61, 0.426),  0 0 1px 15px rgba(34, 170, 0, 0.382);
+  }
+
+.pfpGreen img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/*Purple pfps*/
+
+.pfpPurple {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  background: #000000;
+  border-radius: 50%;
+  border: none;
+  transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+  margin-right: 10px; /* Add spacing between the buttons */
+  }
+
+.pfpPurple:hover{
+  transform: rotate(45deg);
+  box-shadow: 0 0 1px 5px rgba(71, 5, 138, 0.815), 0 0 1px 10px rgba(79, 2, 155, 0.426),  0 0 1px 15px rgba(60, 2, 104, 0.382);
+
+  }
+
+.pfpPurple img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.testing{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(#FFAB9D,.5);
+  width: 56px;
+  height: 56px;
+  transition: all .3s ease;
+}
+
+
+.testing :hover{
+  transition: 5s;
+  display: block;
+  border-radius: 28px;
+  background: rgba(#ff2600,.5);
+  width: 56px;
+  height: 56px;
+}
+

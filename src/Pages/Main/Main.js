@@ -1,10 +1,16 @@
 import React from 'react';
 import { useState } from "react";
 import './Main.css';
-import '../../index.css';
+import '../../Stylesheets/index.css';
+import '../../Stylesheets/Darkmode.css';
 import Light from '../../Assets/Images/logoLight.png';
 import Dark from '../../Assets/Images/logoDark.png';
 import Red from '../../Assets/Images/pfpRed.png';
+import Blue from '../../Assets/Images/pfpBlue.png';
+import Yellow from '../../Assets/Images/pfpYellow.png';
+import Green from '../../Assets/Images/pfpGreen.png';
+import Purple from '../../Assets/Images/pfpPurple.png';
+
 
 function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -12,17 +18,25 @@ function Home() {
     <div className="container">
 
       <div class="button-container">
-        <button class="plus"></button>
-        <button class="plus"></button>
-        <button alt="Logo5" src={Red} class="plus">
+        <button class="pfpRed">
         <img alt="lol" src={Red}/>
         </button>
+        <button class="pfpBlue">
+        <img alt="lol" src={Blue}/>
+        </button>
+        <button class="pfpYellow">
+        <img alt="lol" src={Yellow}/>
+        </button>
+        <button class="pfpGreen">
+        <img alt="lol" src={Green}/>
+        </button>
+        <button class="pfpPurple">
+        <img alt="lol" src={Purple}/>
+        <div className="testing"></div>
+        </button>
 
-        <br />  <br />
-        <br />  <br />
-        <br />  <br />
-        <br />  <br />
-        
+
+
         <img
         alt="Logo" className='logo'
         src={isDarkMode ? Dark : Light}
