@@ -103,7 +103,27 @@
   letter-spacing: 5px;
 }
 
-.dark-mode .pfpRed:hover {
-  transform: rotate(45deg);
-  box-shadow: 0 0 1px 15px rgba(255, 255, 255, 0.25), 0 0 1px 30px rgba(255, 0, 0, 0.25), 0 0 1px 30px rgba(252, 0, 0, 0.625);
+.dark-mode .pfpRed:hover .redBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .pfpBlue:hover .blueBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .pfpGreen:hover .greenBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .pfpYellow:hover .yellowBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .pfpPurple:hover .purpleBar{
+  background-color: #000000;
+  color: #fff;
 }

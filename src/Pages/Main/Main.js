@@ -16,23 +16,67 @@ import Purple from '../../Assets/Images/pfpPurple.png';
 function Home() {
   return (
     <div className="container">
-
       <div class="button-container">
-        <button class="pfpRed">
+        <button onMouseOver={() =>{
+              document.querySelector(".pfpBlue").classList.add("visible");
+              document.querySelector(".pfpYellow").classList.add("visible");
+              document.querySelector(".pfpGreen").classList.add("visible");
+              document.querySelector(".pfpPurple").classList.add("visible");
+            }}
+
+            onMouseOut={() =>{
+              document.querySelector(".pfpBlue").classList.remove("visible");
+              document.querySelector(".pfpYellow").classList.remove("visible");
+              document.querySelector(".pfpGreen").classList.remove("visible");
+              document.querySelector(".pfpPurple").classList.remove("visible");
+            }}
+          className="pfpRed">
         <img alt="lol" src={Red}/>
+        <div class="redBar"><span>Youtube</span></div>
         </button>
-        <button class="pfpBlue">
+        <button onMouseOver={() =>{
+              document.querySelector(".pfpYellow").classList.add("visible");
+              document.querySelector(".pfpGreen").classList.add("visible");
+              document.querySelector(".pfpPurple").classList.add("visible");
+            }}
+
+            onMouseOut={() =>{
+              document.querySelector(".pfpYellow").classList.remove("visible");
+              document.querySelector(".pfpGreen").classList.remove("visible");
+              document.querySelector(".pfpPurple").classList.remove("visible");
+            }}
+            class="pfpBlue">
         <img alt="lol" src={Blue}/>
+        <div class="blueBar"><span>Steam</span></div>
         </button>
-        <button class="pfpYellow">
+        <button onMouseOver={() =>{
+              document.querySelector(".pfpGreen").classList.add("visible");
+              document.querySelector(".pfpPurple").classList.add("visible");
+            }}
+
+            onMouseOut={() =>{
+              document.querySelector(".pfpGreen").classList.remove("visible");
+              document.querySelector(".pfpPurple").classList.remove("visible");
+            }}
+
+            class="pfpYellow">
         <img alt="lol" src={Yellow}/>
+        <div class="yellowBar"><span>Github</span></div>
         </button>
-        <button class="pfpGreen">
+        <button onMouseOver={() =>{
+              document.querySelector(".pfpPurple").classList.add("visible");
+            }} 
+
+            onMouseOut={() =>{
+              document.querySelector(".pfpPurple").classList.remove("visible");
+            }}
+        class="pfpGreen">
         <img alt="lol" src={Green}/>
+        <div class="greenBar"><span>uknown</span></div>
         </button>
         <button class="pfpPurple">
         <img alt="lol" src={Purple}/>
-        <div class="longBar"></div>
+        <div className="purpleBar"><span>Discord</span></div>
         </button>
       </div>
       <br />  <br />
@@ -57,3 +101,7 @@ function Home() {
 };
 
 export default Home;
+
+
+
+

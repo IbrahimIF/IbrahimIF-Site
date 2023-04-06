@@ -23,3 +23,30 @@
         transition: 1s;
     }
   
+
+
+
+    .pfpBlue.visible{
+        position: relative;
+        transition: left 0.5s ease-in-out;
+        left: 120px;
+        transition: 1s;
+    }
+    .pfpYellow.visible{
+        position: relative;
+        transition: left 0.5s ease-in-out;
+        left: 120px;
+        transition: 1s;
+    }
+    .pfpGreen.visible{
+        position: relative;
+        transition: left 0.5s ease-in-out;
+        left: 120px;
+        transition: 1s;
+    }
+    .pfpPurple.visible{
+        position: relative;
+        transition: left 0.5s ease-in-out;
+        left: 120px;
+        transition: 1s;
+    }
