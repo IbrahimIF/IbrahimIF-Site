@@ -3,6 +3,7 @@ import { useState } from "react";
 import './navbar.css';
 import '../../Stylesheets/index.css';
 import '../../Stylesheets/Darkmode.css';
+import '../../Stylesheets/visible.css';
 
 
 
@@ -44,13 +45,14 @@ const Navbar = () => {
             }}
             className="navbutton"
           >
-            Back
+              <div className="button-line"></div>
+  <div className="button-line"></div>
+  <div className="button-line"></div>
           </button>  
 
           <button
             onClick={() =>{
               document.body.classList.toggle("dark-mode");
-              setIsDarkMode(!isDarkMode);
             }}
             className="dark-button"
           >

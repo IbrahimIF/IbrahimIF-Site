@@ -3,6 +3,7 @@ import { useState } from "react";
 import './Main.css';
 import '../../Stylesheets/index.css';
 import '../../Stylesheets/Darkmode.css';
+import '../../Stylesheets/visible.css';
 import Light from '../../Assets/Images/logoLight.png';
 import Dark from '../../Assets/Images/logoDark.png';
 import Red from '../../Assets/Images/pfpRed.png';
@@ -13,7 +14,6 @@ import Purple from '../../Assets/Images/pfpPurple.png';
 
 
 function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
   return (
     <div className="container">
 
@@ -32,21 +32,11 @@ function Home() {
         </button>
         <button class="pfpPurple">
         <img alt="lol" src={Purple}/>
-        <div className="testing"></div>
+        <div class="longBar"></div>
         </button>
-
-
-
-        <img
-        alt="Logo" className='logo'
-        src={isDarkMode ? Dark : Light}
-      />
       </div>
- 
       <br />  <br />
-      
 
-      
 <div className="container2">
 <div class="box">
 

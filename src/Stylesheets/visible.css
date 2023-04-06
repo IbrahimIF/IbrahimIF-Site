@@ -1,0 +1,25 @@
+    .navbutton.visible {
+        position: relative;
+        left: 260px;
+        transition: left 0.5s ease-in-out;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .dark-button.visible {
+        position: relative;
+        left: 265px;
+        transition: left 0.5s ease-in-out;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .container.visible {
+        position: relative;
+        margin: 50px;
+        margin-left: 260px;
+        transition: left 0.5s ease-in-out;
+        z-index: 2;
+        transition: 1s;
+    }
+  
