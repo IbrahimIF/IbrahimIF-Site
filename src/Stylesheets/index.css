@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  transition: 1s;
+}
+
 
 .container {
   margin: 50px;

@@ -22,6 +22,7 @@ function Home() {
               document.querySelector(".pfpYellow").classList.add("visible");
               document.querySelector(".pfpGreen").classList.add("visible");
               document.querySelector(".pfpPurple").classList.add("visible");
+              document.body.classList.add("red-mode");
             }}
 
             onMouseOut={() =>{
@@ -29,6 +30,7 @@ function Home() {
               document.querySelector(".pfpYellow").classList.remove("visible");
               document.querySelector(".pfpGreen").classList.remove("visible");
               document.querySelector(".pfpPurple").classList.remove("visible");
+              document.body.classList.remove("red-mode");
             }}
           className="pfpRed">
         <img alt="lol" src={Red}/>
@@ -38,12 +40,14 @@ function Home() {
               document.querySelector(".pfpYellow").classList.add("visible");
               document.querySelector(".pfpGreen").classList.add("visible");
               document.querySelector(".pfpPurple").classList.add("visible");
+              document.body.classList.add("blue-mode");
             }}
 
             onMouseOut={() =>{
               document.querySelector(".pfpYellow").classList.remove("visible");
               document.querySelector(".pfpGreen").classList.remove("visible");
               document.querySelector(".pfpPurple").classList.remove("visible");
+              document.body.classList.remove("blue-mode");
             }}
             class="pfpBlue">
         <img alt="lol" src={Blue}/>
@@ -52,11 +56,13 @@ function Home() {
         <button onMouseOver={() =>{
               document.querySelector(".pfpGreen").classList.add("visible");
               document.querySelector(".pfpPurple").classList.add("visible");
+              document.body.classList.add("yellow-mode");
             }}
 
             onMouseOut={() =>{
               document.querySelector(".pfpGreen").classList.remove("visible");
               document.querySelector(".pfpPurple").classList.remove("visible");
+              document.body.classList.remove("yellow-mode");
             }}
 
             class="pfpYellow">
@@ -65,16 +71,25 @@ function Home() {
         </button>
         <button onMouseOver={() =>{
               document.querySelector(".pfpPurple").classList.add("visible");
+              document.body.classList.add("green-mode");
             }} 
 
             onMouseOut={() =>{
               document.querySelector(".pfpPurple").classList.remove("visible");
+              document.body.classList.remove("green-mode");
             }}
         class="pfpGreen">
         <img alt="lol" src={Green}/>
         <div class="greenBar"><span>uknown</span></div>
         </button>
-        <button class="pfpPurple">
+        <button onMouseOver={() =>{
+              document.body.classList.add("purple-mode");
+            }} 
+
+            onMouseOut={() =>{
+              document.body.classList.remove("purple-mode");
+            }}
+          class="pfpPurple">
         <img alt="lol" src={Purple}/>
         <div className="purpleBar"><span>Discord</span></div>
         </button>

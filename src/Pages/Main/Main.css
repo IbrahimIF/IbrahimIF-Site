@@ -533,3 +533,31 @@
 .purpleBar span {
   display: none;
 }
+
+
+.red-mode {
+  background-color: rgba(108, 0, 0, 0.5);
+  color: rgb(255, 116, 116);
+  transition: 1s;
+}
+
+.blue-mode {
+  background-color: rgba(0, 36, 237, 0.418);
+  color: rgb(144, 124, 255);
+  transition: 1s;
+}
+
+.yellow-mode {
+  background-color: rgba(255, 241, 50, 0.667);
+  color: rgb(255, 249, 130);
+}
+
+.green-mode {
+  background-color: rgba(77, 213, 57, 0.534);
+  color: rgb(145, 255, 156);
+}
+
+.purple-mode {
+  background-color: rgba(181, 32, 255, 0.308);
+  color: rgb(240, 184, 255);
+}
