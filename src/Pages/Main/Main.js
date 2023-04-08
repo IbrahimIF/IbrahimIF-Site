@@ -1,5 +1,6 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import ThemeContext from "../../Contexts/ThemeContext";
 import { Link } from "react-router-dom";
 import "./Main.css";
 import "../../Stylesheets/index.css";
@@ -15,6 +16,18 @@ import Green from "../../Assets/Images/pfpGreen.png";
 import Purple from "../../Assets/Images/pfpPurple.png";
 
 function Home() {
+
+
+  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
+
+  useEffect(() => {
+    document.querySelector(".navbar").classList.toggle("visible", isLeftMode);
+    document.querySelector(".navbutton").classList.toggle("visible", isLeftMode);
+    document.querySelector(".dark-button").classList.toggle("visible", isLeftMode);
+    document.querySelector(".container").classList.toggle("visible", isLeftMode);
+  }, [isLeftMode]);
+
+
   const [unknownText, setUnknownText] = useState(generateRandomString(6));
 
   useEffect(() => {

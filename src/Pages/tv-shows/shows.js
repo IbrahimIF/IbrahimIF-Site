@@ -1,6 +1,7 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import ThemeContext from "../../Contexts/ThemeContext";
 import "../../Stylesheets/index.css";
 import "../../Stylesheets/Darkmode.css";
 import "../../Stylesheets/visible.css";
@@ -15,23 +16,16 @@ import Green from "../../Assets/Images/pfpGreen.png";
 import Purple from "../../Assets/Images/pfpPurple.png";
 
 function Show() {
-  const [unknownText, setUnknownText] = useState(generateRandomString(6));
+
+  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setUnknownText(generateRandomString(6));
-    }, 50);
-    return () => clearInterval(intervalId);
-  }, []);
+    document.querySelector(".navbar").classList.toggle("visible", isLeftMode);
+    document.querySelector(".navbutton").classList.toggle("visible", isLeftMode);
+    document.querySelector(".dark-button").classList.toggle("visible", isLeftMode);
+    document.querySelector(".container").classList.toggle("visible", isLeftMode);
+  }, [isLeftMode]);
 
-  function generateRandomString(length) {
-    let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=';
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return result;
-  }
   return (
     <div className="container">
       <div className="container2">
