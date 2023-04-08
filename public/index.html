@@ -11,9 +11,26 @@
       content="Web site created using create-react-app"
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>My own website</title>
+    <title>IbrahimIF</title>
+    <script
+    src="https://www.youtube.com/iframe_api"
+    async
+    defer
+  ></script>
   </head>
   <body>
     <div id="root"></div>
+    
+    <script>
+      let player;
+
+      function onYouTubeIframeAPIReady() {
+        player = new window.YT.Player('youtube-player', {
+          height: '360',
+          width: '640',
+          videoId: 'abcdefg',
+        });
+      }
+    </script>
   </body>
 </html>

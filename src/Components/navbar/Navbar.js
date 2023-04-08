@@ -56,7 +56,7 @@ const Navbar = () => {
             }}
             className="dark-button"
           >
-            darkmode
+            dark
           </button>  
 
       <Outlet />
