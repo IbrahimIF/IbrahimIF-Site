@@ -1,10 +1,10 @@
 import React from "react";
 import "./fake.css"
-import { useState, useEffect } from "react";
-import "../../Components/fake/random-image.js"
+import { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../../Stylesheets/index.css";
 import "../../Stylesheets/Darkmode.css";
+import ThemeContext from "../../Contexts/ThemeContext";
 import "../../Stylesheets/visible.css";
 
 
@@ -54,6 +54,12 @@ function chooseRandomMedia() {
  
 
 function Fake() {
+  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
+
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", isDarkMode);
+  }, [isDarkMode]);
+
   const [media, setMedia] = useState(chooseRandomMedia());
   const navigate = useNavigate();
 

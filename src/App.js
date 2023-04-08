@@ -24,8 +24,8 @@ function App() {
           <Route path="/" element={<Saved />}>
             <Route path="/" element={<Main />} />
             <Route path="/Show" element={<Show />} />
-            <Route path="/Fake" element={<Fake />} />
           </Route>
+          <Route path="/Fake" element={<Fake />} />
         </Routes>
       </ThemeContext.Provider>
     </BrowserRouter>
