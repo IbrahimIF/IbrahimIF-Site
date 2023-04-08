@@ -1,18 +1,18 @@
-import { Outlet, Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+
 import './navbar.css';
 import '../../Stylesheets/index.css';
 import '../../Stylesheets/Darkmode.css';
 import '../../Stylesheets/visible.css';
 
-
-
-
+import { useContext, useState, useEffect } from "react";
+import { Outlet, Link, useLocation } from "react-router-dom";
+import ThemeContext from "../../Contexts/ThemeContext";
 
 
 const Navbar = () => {
-
+  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
   const location = useLocation();   // this will help recognise which page your in
+
 
   function isLinkActive(pathname) {
     if (location.pathname === pathname) {
@@ -22,7 +22,7 @@ const Navbar = () => {
     }
   }
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
+
   
   return (
     <>
@@ -31,17 +31,15 @@ const Navbar = () => {
         <nav>
           <ul>
             <Link to="/" className={isLinkActive('/')}>Main</Link>
-            <Link to="/another" className={isLinkActive('/another')}>another</Link>
+            <Link to="/show" className={isLinkActive('/show')}>shows</Link>
           </ul>
         </nav>
 
       </div>
       <button
             onClick={() =>{
-              document.querySelector(".navbar").classList.toggle("visible");
-              document.querySelector(".navbutton").classList.toggle("visible");
-              document.querySelector(".dark-button").classList.toggle("visible");
-              document.querySelector(".container").classList.toggle("visible");
+
+              setIsLeftMode(!isLeftMode);
             }}
             className="navbutton"
           >
@@ -52,7 +50,8 @@ const Navbar = () => {
 
           <button
             onClick={() =>{
-              document.body.classList.toggle("dark-mode");
+              
+              setIsDarkMode(!isDarkMode);
             }}
             className="dark-button"
           >

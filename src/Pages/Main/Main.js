@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Main.css";
 import "../../Stylesheets/index.css";
@@ -15,6 +15,23 @@ import Green from "../../Assets/Images/pfpGreen.png";
 import Purple from "../../Assets/Images/pfpPurple.png";
 
 function Home() {
+  const [unknownText, setUnknownText] = useState(generateRandomString(6));
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setUnknownText(generateRandomString(6));
+    }, 50);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  function generateRandomString(length) {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=';
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result;
+  }
   return (
     <div className="container">
       <div class="button-container">
@@ -98,7 +115,7 @@ function Home() {
         >
           <img alt="lol" src={Green} />
           <div class="greenBar">
-            <span>uknown</span>
+            <span>{unknownText}</span>
           </div>
         </button>
         </a>

@@ -13,6 +13,7 @@ function chooseRandomMedia() {
       { type: 'image', url: 'https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000' },
       { type: 'image', url: 'https://ibb.co/CKGjL7f' },
       { type: 'youtube', url: 'https://www.youtube.com/watch?v=ddWJatRxfz8&ab_channel=OctagonCollaboration' },
+      { type: 'horror', url: 'https://i.pinimg.com/736x/00/a0/6d/00a06db4c3876537327ad51a60b71de6.jpg' },
       // Add more images and YouTube links to the list
     ];
   
@@ -42,9 +43,13 @@ function chooseRandomMedia() {
       } else {
         return <div>YouTube API is loading...</div>;
       }
-    }
-  }
+    } else if (media.type === 'horror') {
+      return <div className="horror">
+        <img src={media.url} alt="random" />
+      </div>;
 
+  }
+}
 
  
 
@@ -66,11 +71,15 @@ function Fake() {
 
   return (
     <div className="container">
+
+<div className="container2">
       <div className="media" onClick={refreshMedia}>
         {media}
       </div>
       <div>test
       </div>
+    </div>
+
     </div>
   );
 }
