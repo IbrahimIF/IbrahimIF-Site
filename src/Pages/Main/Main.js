@@ -163,6 +163,12 @@ function Home() {
             <div class="block"></div>
             <p className="sectext">Professional Retard</p>
           </div>
+
+          <div>
+            <div class="block3"></div>
+            <p className="thirdtext">Professional</p>
+          </div>
+
         </div>
       </div>
     </div>

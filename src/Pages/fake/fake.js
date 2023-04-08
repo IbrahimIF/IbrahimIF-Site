@@ -11,7 +11,7 @@ import "../../Stylesheets/visible.css";
 function chooseRandomMedia() {
     const mediaList = [
       { type: 'image', url: 'https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000' },
-      { type: 'image', url: 'https://ibb.co/CKGjL7f' },
+      { type: 'image', url: 'https://i.postimg.cc/Xv2nv6qJ/matrix.webp' },
       { type: 'youtube', url: 'https://www.youtube.com/watch?v=ddWJatRxfz8&ab_channel=OctagonCollaboration' },
       { type: 'horror', url: 'https://i.pinimg.com/736x/00/a0/6d/00a06db4c3876537327ad51a60b71de6.jpg' },
       // Add more images and YouTube links to the list
@@ -21,7 +21,10 @@ function chooseRandomMedia() {
     const media = mediaList[randomIndex];
   
     if (media.type === 'image') {
-      return <img src={media.url} alt="random" />;
+      return<div>
+<img src={media.url} alt="random" /> test
+      </div>;
+      
     } else if (media.type === 'youtube') {
       // Extract the video ID from the YouTube URL
       const videoId = media.url.split('=')[1];
@@ -77,13 +80,9 @@ function Fake() {
 
   return (
     <div className="container">
-
-<div className="container2">
       <div className="media" onClick={refreshMedia}>
         {media}
-      </div>
-      <div>test
-      </div>
+
     </div>
 
     </div>

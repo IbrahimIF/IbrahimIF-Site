@@ -103,6 +103,18 @@
   letter-spacing: 5px;
 }
 
+.dark-mode .thirdtext {
+  animation: secFadeIn 2s forwards;
+  animation-delay: 5.2s;
+  opacity: 0;
+  font-weight: 400;
+  font-family: 'Lato';
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
 .dark-mode .pfpRed:hover .redBar{
   background-color: #000000;
   color: #fff;
