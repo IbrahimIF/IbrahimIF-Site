@@ -178,7 +178,7 @@ return (
 
       <div class="subTitle">
         <div class="block-subTitle"></div>
-        <p class="subText">Uknown regions</p>
+        <p class="subText">20-year-old software engineer from the United Kingdom</p>
       </div>
 
         <div className="icons">

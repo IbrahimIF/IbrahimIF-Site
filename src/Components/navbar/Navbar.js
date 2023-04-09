@@ -8,8 +8,7 @@ import "../../Stylesheets/Darkmode.css";
 import "../../Stylesheets/visible.css";
 
 const Navbar = () => {
-  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } =
-    useContext(ThemeContext);
+  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode} = useContext(ThemeContext);
   const location = useLocation(); // this will help recognise which page your in
 
   function isLinkActive(pathname) {
@@ -53,7 +52,7 @@ const Navbar = () => {
         }}
         className="dark-button"
       >
-        dark
+        {isDarkMode ? "Light" : "Dark"}
       </button>
 
       <Outlet />

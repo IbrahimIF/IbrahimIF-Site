@@ -51,14 +51,14 @@ a.active {
   width: 75px;
   height: 50px;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgba(231, 231, 231, 0.23);
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
   outline: none;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.064);
   transition: left 0.5s ease-in-out;
   z-index: 2;
   transition: 1s;
@@ -80,17 +80,16 @@ a.active {
   width: 100px;
   height: 50px;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  outline: none;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   transition: left 0.5s ease-in-out;
   z-index: 2;
   transition: 1s;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(231, 231, 231, 0.23);
 }
 
 .dark-button:hover {

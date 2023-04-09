@@ -4,7 +4,7 @@ import ThemeContext from "../Contexts/ThemeContext";
 import Navbar from "../navbar/Navbar";
 
 const Saved = () => {
-  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
+  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode} = useContext(ThemeContext);
 
   useEffect(() => {
     document.body.classList.toggle("dark-mode", isDarkMode);
