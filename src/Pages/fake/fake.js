@@ -8,15 +8,21 @@ import ThemeContext from "../../Components/Contexts/ThemeContext";
 import "../../Stylesheets/visible.css";
 
 
+
 function chooseRandomMedia() {
     const mediaList = [
       { type: 'image', url: 'https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000' },
       { type: 'image', url: 'https://i.postimg.cc/Xv2nv6qJ/matrix.webp' },
-      { type: 'youtube', url: 'https://www.youtube.com/watch?v=ddWJatRxfz8&ab_channel=OctagonCollaboration' },
+      { type: 'video', url: 'https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1'},
+      { type: 'video', url: 'https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1'},
+      { type: 'video', url: 'https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1' },
       { type: 'horror', url: 'https://i.pinimg.com/736x/00/a0/6d/00a06db4c3876537327ad51a60b71de6.jpg' },
       // Add more images and YouTube links to the list
     ];
-  
+    // used for generating a random set of texts within pfp green
+  // used for generating a random set of texts within pfp green
+
+
     const randomIndex = Math.floor(Math.random() * mediaList.length);
     const media = mediaList[randomIndex];
   
@@ -25,32 +31,15 @@ function chooseRandomMedia() {
 <img src={media.url} alt="random" /> test
       </div>;
       
-    } else if (media.type === 'youtube') {
-      // Extract the video ID from the YouTube URL
-      const videoId = media.url.split('=')[1];
-  
-      // Set the player options
-      const playerOpts = {
-        height: '360',
-        width: '640',
-        videoId: videoId,
-        playerVars: {
-          autoplay: 1,
-        },
-      };
-  
-      // Create a new YouTube player if the YouTube API has finished loading
-      if (window.YT) {
-        const player = new window.YT.Player('youtube-player', playerOpts);
-        return <div id="youtube-player" />;
-      } else {
-        return <div>YouTube API is loading...</div>;
-      }
     } else if (media.type === 'horror') {
       return <div className="horror">
         <img src={media.url} alt="random" />
       </div>;
 
+  }else if (media.type === 'video') {
+    return <div className="horror">
+      <iframe src={media.url} title="tesssssts" allowFullScreen/>
+    </div>;
   }
 }
 
@@ -59,6 +48,7 @@ function chooseRandomMedia() {
 function Fake() {
   const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
 
+  
   useEffect(() => {
     document.body.classList.toggle("dark-mode", isDarkMode);
   }, [isDarkMode]);

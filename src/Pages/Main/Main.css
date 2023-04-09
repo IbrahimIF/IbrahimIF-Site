@@ -406,11 +406,12 @@
   font-size: 16px;
   font-weight: bold;
   margin-right: 12px; /* added space between the icons and text */
+  transition: 1s;
 }.icon-text {
   font-family: Arial, sans-serif;
   margin-left: 8px; /* space between the icon and the text */
 }.icons:hover{
-  color: rgb(203, 203, 203);
+  color: rgb(163, 163, 163);
   transition: 1s;
 }
 
