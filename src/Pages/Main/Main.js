@@ -170,6 +170,7 @@ return (
 {/* section for info */}
   <div className="box">
     <div class="textContainer">
+      <br /> <br />
       <div class="title">
         <span class="block-title"></span>
         <h1 class="firstText">Ibrahim Farrah</h1>
@@ -180,16 +181,16 @@ return (
         <p class="subText">Uknown regions</p>
       </div>
 
-      <div class="block-icons">
-        <a class="icons" href="https://discordapp.com/users/431043132889628682">
-          <FontAwesomeIcon icon={faEnvelope} /> gmail
-        </a>
-        <a class="icons" href="https://discordapp.com/users/431043132889628682">
-          <FontAwesomeIcon icon={faTwitter} /> twitter
-        </a>
-        <a class="icons" href="https://discordapp.com/users/431043132889628682">
-          <FontAwesomeIcon icon={faLinkedin} /> linklden
-        </a>
+        <div className="icons">
+          <a class="icons" href="https://mail.google.com/mail/u/0/?zx=knxh55u8nye4#inbox">
+            <FontAwesomeIcon icon={faEnvelope} /><span class="icon-text">ibrahimfarrah30@</span>
+          </a>
+          <a class="icons" href="https://twitter.com/home?lang=en">
+            <FontAwesomeIcon icon={faTwitter} /><span class="icon-text">Twitter</span>
+          </a>
+          <a class="icons" href="https://www.linkedin.com/in/ibrahim-farrah-b742471a6/">
+            <FontAwesomeIcon icon={faLinkedin} /><span class="icon-text">Linklden</span>
+          </a> 
       </div>
 
     </div>

@@ -375,31 +375,29 @@
   width: 0%;
   height: inherit;
   background: #000000;
-  position: absolute;
+  position: relative;
   animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
   animation-delay: 2s;
   display: flex;
+  margin-left: 8px;
 }.subText {
   animation: secFadeIn 2s forwards;
   animation-delay: 3.2s;
-  color: #000000a6; /* changed color to white for better readability */
-  font-size: 24px; /* decreased font-size for better balance */
+  color: #00000086; /* made the color slightly lighter */
+  font-size: 22px; /* made the font size smaller */
   padding: 5px;
   opacity: 0;
   white-space: nowrap;
   align-items: center;
   justify-content: center;
   transition: 1s;
+  font-weight: 600; /* made the text bolder */
+  margin-left: 8px;
 }
 
-.block-icons {
-  width: 0%;
-  height: inherit;
-  background: #000000;
-  position: absolute;
-  animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-  animation-delay: 3s;
-}.icons {
+.icons {
+  position: relative;
+  justify-content: center; /* added to align icons and text to the center */
   animation: secFadeIn 3s forwards;
   animation-delay: 5s;
   font-weight: 400;
@@ -409,8 +407,11 @@
   font-size: 18px;
   cursor: pointer;
   text-decoration: none;
-  flex-wrap: nowrap; /* added to ensure text appears on the same row */
+  flex-wrap: nowrap;
   display: flex;
+  margin-right: 12px; /* added space between the icons and text */
+}.icon-text {
+  margin-left: 8px; /* space between the icon and the text */
 }
 
 
