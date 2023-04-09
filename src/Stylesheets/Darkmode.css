@@ -76,3 +76,10 @@
   background-color: #000000;
   color: #fff;
 }
+
+.dark-mode .navbar {
+  background-color: rgba(17, 17, 17, 0.601);
+  /* Change this to adjust the background color and transparency */
+  color: rgb(255, 255, 255);
+  border: 0.2px solid rgb(32, 32, 32);
+}
