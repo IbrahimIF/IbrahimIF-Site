@@ -172,23 +172,25 @@ return (
     <div class="textContainer">
       <div class="title">
         <span class="block-title"></span>
-          <h1 className="firstText">Ibrahim Farrah</h1>
+        <h1 class="firstText">Ibrahim Farrah</h1>
       </div>
 
       <div class="subTitle">
         <div class="block-subTitle"></div>
-          <p className="subText">Uknown regions</p>
-        </div>
+        <p class="subText">Uknown regions</p>
+      </div>
 
-      <div>
-        <div class="block-icons"></div>
-          <p className="icons">
-          <p>{" "}<FontAwesomeIcon icon={faEnvelope} />{" "} gmail</p>
-          <p>{" "}<FontAwesomeIcon icon={faTwitter} />{" "} twitter</p>
-          <p>{" "}<FontAwesomeIcon icon={faLinkedin} />{" "} linklden</p>
-            other...
-          </p>
-        </div>
+      <div class="block-icons">
+        <a class="icons" href="https://discordapp.com/users/431043132889628682">
+          <FontAwesomeIcon icon={faEnvelope} /> gmail
+        </a>
+        <a class="icons" href="https://discordapp.com/users/431043132889628682">
+          <FontAwesomeIcon icon={faTwitter} /> twitter
+        </a>
+        <a class="icons" href="https://discordapp.com/users/431043132889628682">
+          <FontAwesomeIcon icon={faLinkedin} /> linklden
+        </a>
+      </div>
 
     </div>
   </div>
