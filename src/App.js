@@ -1,12 +1,14 @@
 // App.js
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ThemeContext from "./Contexts/ThemeContext";
+import ThemeContext from "./Components/Contexts/ThemeContext";
 
 import Saved from "./Components/savedChanges/SavedChanges";
 import Main from "./Pages/Main/Main";
 import Fake from "./Pages/fake/fake";
 import Show from "./Pages/tv-shows/shows";
+
+
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("isDarkMode") === "true");

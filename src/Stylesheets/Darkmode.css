@@ -15,14 +15,12 @@
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   border: 2px solid rgb(254, 254, 254);
-}
-
-.dark-mode .button-line {
+}.dark-mode .button-line {
   background-color: rgb(0, 0, 0);
   border: 0.2px solid rgb(255, 255, 255);
 }
 
-.dark-mode .container2 {
+.dark-mode .box {
   width: 100%;
   height: 100vh;
   background: #232323;
@@ -32,87 +30,23 @@
   border-color: #363636;
 }
 
-.dark-mode .box {
-  width: 250px;
-  height: 250px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 
-.dark-mode .title {
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 50px;
-}
-
-.dark-mode .block1 {
-  width: 0%;
-  height: inherit;
+.dark-mode .block-title {
   background: #ffffff;
-  position: absolute;
-  animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-  display: flex;
-}
-
-.dark-mode .Firsttext {
-  font-family: 'Poppins';
+}.dark-mode .firstText {
   color: #fff;
-  font-size: 32px;
-  -webkit-animation: mainFadeIn 2s forwards;
-  -o-animation: mainFadeIn 2s forwards;
-  animation: mainFadeIn 2s forwards;
-  animation-delay: 1.6s;
-  opacity: 0;
-  display: flex;
-  align-items: baseline;
-  position: relative;
 }
 
-.dark-mode .role {
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 30px;
-  margin-top: -10px;
-}
-
-.dark-mode .block {
-  width: 0%;
-  height: inherit;
+.dark-mode .block-subTitle {
   background: #ffffff;
-  position: absolute;
-  animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-  animation-delay: 2s;
-  display: flex;
+}.dark-mode .subText {
+  color: #ffffff;
 }
 
-.dark-mode .sectext {
-  animation: secFadeIn 2s forwards;
-  animation-delay: 3.2s;
-  opacity: 0;
-  font-weight: 400;
-  font-family: 'Lato';
+.dark-mode .block-icons {
+  background: #ffffff;
+}.dark-mode .icons {
   color: #ffffff;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
-.dark-mode .thirdtext {
-  animation: secFadeIn 2s forwards;
-  animation-delay: 5.2s;
-  opacity: 0;
-  font-weight: 400;
-  font-family: 'Lato';
-  color: #ffffff;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
 }
 
 .dark-mode .pfpRed:hover .redBar{

@@ -1,66 +1,64 @@
-
-import './navbar.css';
-import '../../Stylesheets/index.css';
-import '../../Stylesheets/Darkmode.css';
-import '../../Stylesheets/visible.css';
-
 import { useContext, useState, useEffect } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
-import ThemeContext from "../../Contexts/ThemeContext";
+import ThemeContext from "../Contexts/ThemeContext";
 
+import "./navbar.css";
+import "../../Stylesheets/index.css";
+import "../../Stylesheets/Darkmode.css";
+import "../../Stylesheets/visible.css";
 
 const Navbar = () => {
-  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
-  const location = useLocation();   // this will help recognise which page your in
-
+  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } =
+    useContext(ThemeContext);
+  const location = useLocation(); // this will help recognise which page your in
 
   function isLinkActive(pathname) {
     if (location.pathname === pathname) {
-      return 'active';
+      return "active";
     } else {
-      return '';
+      return "";
     }
   }
 
-
-  
   return (
     <>
-      <div className="navbar" id="navbar"> {/*Navigation Bar*/}
-
+      <div className="navbar" id="navbar">
+        {" "}
+        {/*Navigation Bar*/}
         <nav>
           <ul>
-            <Link to="/" className={isLinkActive('/')}>Main</Link>
-            <Link to="/show" className={isLinkActive('/show')}>shows</Link>
+            <Link to="/" className={isLinkActive("/")}>
+              Main
+            </Link>
+            <Link to="/show" className={isLinkActive("/show")}>
+              shows
+            </Link>
           </ul>
         </nav>
-
       </div>
       <button
-            onClick={() =>{
+        onClick={() => {
+          setIsLeftMode(!isLeftMode);
+        }}
+        className="navbutton"
+      >
+        <div className="button-line"></div>
+        <div className="button-line"></div>
+        <div className="button-line"></div>
+      </button>
 
-              setIsLeftMode(!isLeftMode);
-            }}
-            className="navbutton"
-          >
-              <div className="button-line"></div>
-  <div className="button-line"></div>
-  <div className="button-line"></div>
-          </button>  
-
-          <button
-            onClick={() =>{
-              
-              setIsDarkMode(!isDarkMode);
-            }}
-            className="dark-button"
-          >
-            dark
-          </button>  
+      <button
+        onClick={() => {
+          setIsDarkMode(!isDarkMode);
+        }}
+        className="dark-button"
+      >
+        dark
+      </button>
 
       <Outlet />
     </>
-  )
+  );
 };
 
 export default Navbar;

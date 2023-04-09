@@ -4,7 +4,7 @@ import { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../../Stylesheets/index.css";
 import "../../Stylesheets/Darkmode.css";
-import ThemeContext from "../../Contexts/ThemeContext";
+import ThemeContext from "../../Components/Contexts/ThemeContext";
 import "../../Stylesheets/visible.css";
 
 
