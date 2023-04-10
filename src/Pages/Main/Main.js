@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect, useContext } from "react";
 import ThemeContext from "../../Components/Contexts/ThemeContext";
+import { useRandomText } from "../../Components/RandomText/useRandomText";
 
 //icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +12,7 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 
 
 //pfp images
@@ -24,6 +26,7 @@ import Purple from "../../Assets/Images/pfpPurple.png";
 function Home() {
   //is used to move everything to the left and saves it as a prefrence within themecontext for other pages
   const { isLeftMode } = useContext(ThemeContext);
+  const unknownText = useRandomText();
 
   useEffect(() => {
     document.querySelector(".navbar").classList.toggle("visible", isLeftMode);
@@ -31,28 +34,6 @@ function Home() {
     document.querySelector(".dark-button").classList.toggle("visible", isLeftMode);
     document.querySelector(".container").classList.toggle("visible", isLeftMode);
   }, [isLeftMode]);
-
-  // used for generating a random set of texts within pfp green
-  const [unknownText, setUnknownText] = useState(generateRandomString(6));
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setUnknownText(generateRandomString(6));
-    }, 50);
-    return () => clearInterval(intervalId);
-  }, []);
-
-  function generateRandomString(length) {
-    let result = "";
-    const characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=";
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(
-        Math.floor(Math.random() * characters.length)
-      );
-    }
-    return result;
-  }
 
   // html of the page
 return (
