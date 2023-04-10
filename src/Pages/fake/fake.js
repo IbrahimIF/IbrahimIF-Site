@@ -29,11 +29,29 @@ function Fake() {
     function chooseRandomMedia() {
       const mediaList = [
               // Media list (images and videos)
-              { type: 'image', url: 'https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000' },
-              { type: 'image', url: 'https://i.postimg.cc/Xv2nv6qJ/matrix.webp' },
-              { type: 'video', url: 'https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1'},
-              { type: 'video', url: 'https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1'},
-              { type: 'horror', url: 'https://i.pinimg.com/736x/00/a0/6d/00a06db4c3876537327ad51a60b71de6.jpg' },
+              { type: 'image', url: 'https://i.postimg.cc/mkgq17LH/giganigga.jpg' },
+              { type: 'image', url: 'https://i.postimg.cc/cCzDKjkp/IMG-4608.jpg' },
+              { type: 'image', url: 'https://i.postimg.cc/xTH7JjYg/troll-face-gif.jpg' },
+
+              { type: 'video', url: 'https://www.youtube.com/embed/_JuFBDI1jkg?autoplay=1&controls=0'}, 
+              { type: 'video', url: 'https://www.youtube.com/embed/ddWJatRxfz8?autoplay=1&controls=0'},
+              { type: 'video', url: 'https://www.youtube.com/embed/IGprEUpFmz0?autoplay=1&controls=0'},
+              { type: 'video', url: 'https://www.youtube.com/embed/IRPo671GHxI?autoplay=1&controls=0'},
+              { type: 'video', url: 'https://www.youtube.com/embed/yUGZwlLoZh0?autoplay=1&controls=0'},
+              { type: 'video', url: 'https://www.youtube.com/embed/K-bP87jsrW4?autoplay=1&controls=0'},
+              { type: 'video', url: 'https://www.youtube.com/embed/u3MFk4qTsFI?autoplay=1&controls=0'},
+              { type: 'video', url: 'https://www.youtube.com/embed/h7FJ9ddRNdA?autoplay=1&controls=0'},
+
+              { type: 'short', url: 'https://www.youtube.com/embed/ny09IWBXVEo?autoplay=1&controls=0'},
+              { type: 'short', url: 'https://www.youtube.com/embed/MfA6NAha2K0?autoplay=1&controls=0'},
+              { type: 'short', url: 'https://www.youtube.com/embed/tY875eoXAj4?autoplay=1&controls=0'},
+              { type: 'short', url: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0', url2: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0'},
+              { type: 'short', url: 'https://www.youtube.com/embed/08XyCs4yVEU?autoplay=1&controls=0'},
+              { type: 'short', url: 'https://www.youtube.com/embed/SqE2J9V3a8A?autoplay=1&controls=0'},
+              { type: 'short', url: 'https://www.youtube.com/embed/5edf0roC98A?autoplay=1&controls=0'},
+              { type: 'short', url: '?autoplay=1&controls=0'},
+
+              { type: 'horror', url: 'https://i.postimg.cc/XNFqJFZP/horror-image.png' },
               // Add more images and YouTube links to the list
       ];
 
@@ -41,24 +59,32 @@ function Fake() {
       const media = mediaList[randomIndex];
 
       if (media.type === 'image') {
-        setTimeoutDuration(10000); // Set the timeout to 10 seconds
+        setTimeoutDuration(3000); // Set the timeout to 10 seconds
         return (
           <div>
-            <img src={media.url} alt="random" /> test
+            <img width="900" height="655" src={media.url} alt="random" />
           </div>
         );
       } else if (media.type === 'horror') {
-        setTimeoutDuration(15000); // Set the timeout to 15 seconds
+        setTimeoutDuration(3000); // Set the timeout to 15 seconds
         return (
           <div className="horror">
-            <img src={media.url} alt="random" />
+            <img width="600" height="355" src={media.url} alt="horror" />
           </div>
         );
       } else if (media.type === 'video') {
-        setTimeoutDuration(3000); // Set the timeout to 3 seconds
+        setTimeoutDuration(15000); // Set the timeout to 15 seconds
         return (
           <div>
-            <iframe src={media.url} title="tesssssts" allowFullScreen />
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          </div>
+        );
+      } else if (media.type === 'short') {
+        setTimeoutDuration(8000); // Set the timeout to 8 seconds
+        return (
+          <div>
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="700" height="455" src={media.url2} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         );
       }
@@ -87,10 +113,10 @@ function Fake() {
   }
 
   return (
-    <div className="container">
+    <div className="container2">
       <div className="media" onClick={refreshMedia}>
         {media}
-        {media && media.props.className === "horror" && <p>{unknownText}</p>}
+        {media && media.props.className === "horror" && <p>{unknownText}     he    {unknownText}     sees     {unknownText}      you     {unknownText}</p>}
       </div>
     </div>
   );
