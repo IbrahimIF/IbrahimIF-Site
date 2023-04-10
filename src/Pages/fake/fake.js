@@ -30,7 +30,6 @@ function Fake() {
       const mediaList = [
               // Media list (images and videos)
               { type: 'image', url: 'https://i.postimg.cc/mkgq17LH/giganigga.jpg' },
-              { type: 'image', url: 'https://i.postimg.cc/cCzDKjkp/IMG-4608.jpg' },
               { type: 'image', url: 'https://i.postimg.cc/xTH7JjYg/troll-face-gif.jpg' },
 
               { type: 'video', url: 'https://www.youtube.com/embed/_JuFBDI1jkg?autoplay=1&controls=0'}, 

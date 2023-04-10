@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import ThemeContext from "../../Components/Contexts/ThemeContext";
-import "./shows.css"
+import "./Anime.css"
 
 function Show() {
 
@@ -17,6 +17,15 @@ function Show() {
 
   return (
     <div className="container">
+<div className="box">
+    <div class="textContainer">
+      <br /> <br />
+      <div class="title">
+        <span class="block-title"></span>
+        <h1 class="firstText">Top 10 anime</h1>
+      </div>
+    </div>
+  </div>
 
     </div>
   );

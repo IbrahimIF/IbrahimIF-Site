@@ -6,8 +6,11 @@ import ThemeContext from "./Components/Contexts/ThemeContext";
 import Saved from "./Components/savedChanges/SavedChanges";
 import Main from "./Pages/Main/Main";
 import Fake from "./Pages/fake/fake";
-import Show from "./Pages/tv-shows/shows";
-
+import Show from "./Pages/Shows/shows";
+import Project from "./Pages/Projects/Projects";
+import About from "./Pages/About/About";
+import Anime from "./Pages/Anime/Anime";
+//import from "./Pages/";
 
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
           <Route path="/" element={<Saved />}>
             <Route path="/" element={<Main />} />
             <Route path="/Show" element={<Show />} />
+            <Route path="/Anime" element={<Anime />} />
+            <Route path="/Project" element={<Project />} />
+            <Route path="/About" element={<About />} />
           </Route>
           <Route path="/Fake" element={<Fake />} />
         </Routes>

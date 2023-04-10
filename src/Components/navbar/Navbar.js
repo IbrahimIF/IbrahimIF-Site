@@ -29,8 +29,17 @@ const Navbar = () => {
             <Link to="/" className={isLinkActive("/")}>
               Main
             </Link>
-            <Link to="/show" className={isLinkActive("/show")}>
-              shows
+            <Link to="/Project" className={isLinkActive("/Project")}>
+              Projects
+            </Link>
+            <Link to="/About" className={isLinkActive("/About")}>
+              About-me
+            </Link>
+            <Link to="/Show" className={isLinkActive("/Show")}>
+              Shows
+            </Link>
+            <Link to="/Anime" className={isLinkActive("/Anime")}>
+              Anime
             </Link>
           </ul>
         </nav>
