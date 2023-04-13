@@ -81,5 +81,38 @@
   background-color: rgba(17, 17, 17, 0.601);
   /* Change this to adjust the background color and transparency */
   color: rgb(255, 255, 255);
-  border: 0.2px solid rgb(32, 32, 32);
+  border: 2px solid rgb(32, 32, 32);
+}
+
+.dark-mode .navbar a{
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.dark-mode a.active {
+  color: #000000;
+  background-color: #606060;
+  border: 2px solid #454545;
+}
+
+/*the colors that appear when hoverd over the buttons*/
+.darkred-mode {
+  background-color: rgb(24, 0, 0);
+  transition: 1s;
+}
+
+.darkblue-mode {
+  background-color: rgb(0, 4, 28);
+}
+
+.darkyellow-mode {
+  background-color: rgb(23, 22, 0);
+}
+
+.darkgreen-mode {
+  background-color: rgb(4, 24, 0);
+}
+
+.darkpurple-mode {
+  background-color: rgb(13, 0, 20);
 }

@@ -25,9 +25,8 @@ import Purple from "../../Assets/Images/pfpPurple.png";
 
 function Home() {
   //is used to move everything to the left and saves it as a prefrence within themecontext for other pages
-  const { isLeftMode } = useContext(ThemeContext);
   const unknownText = useRandomText();
-
+  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
   useEffect(() => {
     document.querySelector(".navbar").classList.toggle("visible", isLeftMode);
     document.querySelector(".navbutton").classList.toggle("visible", isLeftMode);
@@ -38,7 +37,7 @@ function Home() {
   // html of the page
 return (
 <div className="container">
-  <div class="button-container">
+  <div className="button-container">
 
 {/* youtube profile picture */}
     <a href="https://www.youtube.com/channel/UCcPOdIldwZyjXys2QTz-x9g">
@@ -48,14 +47,14 @@ return (
         document.querySelector(".pfpYellow").classList.add("visible");
         document.querySelector(".pfpGreen").classList.add("visible");
         document.querySelector(".pfpPurple").classList.add("visible");
-        document.body.classList.add("red-mode");
+        document.body.classList.add(isDarkMode ? "darkred-mode" :"red-mode");
         }}
         onMouseOut={() => {
         document.querySelector(".pfpBlue").classList.remove("visible");
         document.querySelector(".pfpYellow").classList.remove("visible");
         document.querySelector(".pfpGreen").classList.remove("visible");
         document.querySelector(".pfpPurple").classList.remove("visible");
-        document.body.classList.remove("red-mode");
+        document.body.classList.remove(isDarkMode ? "darkred-mode" :"red-mode");
         }}
         className="pfpRed">
         <img alt="redpfp" src={Red} />
@@ -72,13 +71,13 @@ return (
         document.querySelector(".pfpYellow").classList.add("visible");
         document.querySelector(".pfpGreen").classList.add("visible");
         document.querySelector(".pfpPurple").classList.add("visible");
-        document.body.classList.add("blue-mode");
+        document.body.classList.add(isDarkMode ? "darkblue-mode" :"blue-mode");
         }}
         onMouseOut={() => {
         document.querySelector(".pfpYellow").classList.remove("visible");
         document.querySelector(".pfpGreen").classList.remove("visible");
         document.querySelector(".pfpPurple").classList.remove("visible");
-        document.body.classList.remove("blue-mode");
+        document.body.classList.remove(isDarkMode ? "darkblue-mode" :"blue-mode");
         }}
         class="pfpBlue">
         <img alt="bluepfp" src={Blue} />
@@ -94,12 +93,12 @@ return (
         onMouseOver={() => {
         document.querySelector(".pfpGreen").classList.add("visible");
         document.querySelector(".pfpPurple").classList.add("visible");
-        document.body.classList.add("yellow-mode");
+        document.body.classList.add(isDarkMode ? "darkyellow-mode" :"yellow-mode");
         }}
         onMouseOut={() => {
         document.querySelector(".pfpGreen").classList.remove("visible");
         document.querySelector(".pfpPurple").classList.remove("visible");
-        document.body.classList.remove("yellow-mode");
+        document.body.classList.remove(isDarkMode ? "darkyellow-mode" :"yellow-mode");
         }}
         class="pfpYellow">
         <img alt="yellowpfp" src={Yellow} />
@@ -114,11 +113,11 @@ return (
       <button
         onMouseOver={() => {
         document.querySelector(".pfpPurple").classList.add("visible");
-        document.body.classList.add("green-mode");
+        document.body.classList.add(isDarkMode ? "darkgreen-mode" :"green-mode");
         }}
         onMouseOut={() => {
         document.querySelector(".pfpPurple").classList.remove("visible");
-        document.body.classList.remove("green-mode");
+        document.body.classList.remove(isDarkMode ? "darkgreen-mode" :"green-mode");
         }}
         class="pfpGreen">
         <img alt="greenpfp" src={Green} />
@@ -132,10 +131,10 @@ return (
     <a href="https://discordapp.com/users/431043132889628682">
       <button
         onMouseOver={() => {
-        document.body.classList.add("purple-mode");
+        document.body.classList.add(isDarkMode ? "darkpurple-mode" : "purple-mode");
         }}
         onMouseOut={() => {
-        document.body.classList.remove("purple-mode");
+        document.body.classList.remove(isDarkMode ? "darkpurple-mode" : "purple-mode");
         }}
         class="pfpPurple">
         <img alt="purplepfp" src={Purple} />

@@ -11,6 +11,7 @@ const Navbar = () => {
   const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode} = useContext(ThemeContext);
   const location = useLocation(); // this will help recognise which page your in
 
+
   function isLinkActive(pathname) {
     if (location.pathname === pathname) {
       return "active";
@@ -19,6 +20,7 @@ const Navbar = () => {
     }
   }
 
+
   return (
     <>
       <div className="navbar" id="navbar">
@@ -26,19 +28,23 @@ const Navbar = () => {
         {/*Navigation Bar*/}
         <nav>
           <ul>
-            <Link to="/" className={isLinkActive("/")}>
+            <Link to="/" name="Main" className={isLinkActive("/")}>
               Main
             </Link>
-            <Link to="/Project" className={isLinkActive("/Project")}>
-              Projects
+            <br />
+            <Link to="/Project" name="Projects" className={isLinkActive("/Project")}>
+            Projects
             </Link>
-            <Link to="/About" className={isLinkActive("/About")}>
-              About-me
+            <br />
+            <Link to="/About" name="About" className={isLinkActive("/About")}>
+              About
             </Link>
-            <Link to="/Show" className={isLinkActive("/Show")}>
+            <br />
+            <Link to="/Show" name="Shows"className={isLinkActive("/Show")}>
               Shows
             </Link>
-            <Link to="/Anime" className={isLinkActive("/Anime")}>
+            <br />
+            <Link to="/Anime" name="Anime" className={"link " +isLinkActive("/Anime")}>
               Anime
             </Link>
           </ul>
@@ -47,6 +53,7 @@ const Navbar = () => {
       <button
         onClick={() => {
           setIsLeftMode(!isLeftMode);
+          document.querySelector(".subText").classList.toggle("visible");
         }}
         className="navbutton"
       >

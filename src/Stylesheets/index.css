@@ -4,6 +4,7 @@
 
 body {
   transition: 1s;
+  background-color: #ffffff;
 }
 
 .container {
@@ -43,3 +44,8 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+
+
+
+        

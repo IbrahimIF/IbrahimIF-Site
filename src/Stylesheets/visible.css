@@ -50,3 +50,25 @@
         left: 120px;
         transition: 1s;
     }
+
+
+    @media (max-width: 680px) {
+        .subText.visible {
+          font-size: 15px;
+        }
+      }
+
+      /* Font size for tablets */
+@media (max-width: 625px) {
+    .subText.visible {
+      padding: 110px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Font size for mobile devices */
+  @media (max-width: 480px) {
+    .subText.visible {
+      font-size: 5px;
+    }
+  }

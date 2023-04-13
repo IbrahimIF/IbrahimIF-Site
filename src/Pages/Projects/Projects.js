@@ -27,7 +27,7 @@ function Show() {
 
       <div class="subTitle">
         <div class="block-subTitle"></div>
-        <p class="subText">I have done in the 4 years of my experience</p>
+        <p class="subText">What I have done in the 4 years of my experience</p>
       </div>
 
     </div>

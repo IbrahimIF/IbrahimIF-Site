@@ -488,30 +488,28 @@
 
 /*the colors that appear when hoverd over the buttons*/
 .red-mode {
-  background-color: rgba(108, 0, 0, 0.5);
-  color: rgb(255, 116, 116);
+  background-color: rgb(255, 239, 239);
   transition: 1s;
 }
 
 .blue-mode {
-  background-color: rgba(0, 36, 237, 0.418);
-  color: rgb(144, 124, 255);
+  background-color: rgb(245, 246, 255);
   transition: 1s;
 }
 
 .yellow-mode {
-  background-color: rgba(255, 241, 50, 0.667);
-  color: rgb(255, 249, 130);
+  background-color: rgb(255, 254, 239);
+  transition: 1s;
 }
 
 .green-mode {
-  background-color: rgba(77, 213, 57, 0.534);
-  color: rgb(145, 255, 156);
+  background-color: rgb(245, 255, 245);
+  transition: 1s;
 }
 
 .purple-mode {
-  background-color: rgba(181, 32, 255, 0.308);
-  color: rgb(240, 184, 255);
+  background-color: rgb(251, 244, 255);
+  transition: 1s;
 }
 
 
