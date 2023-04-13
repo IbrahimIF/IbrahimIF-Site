@@ -17,10 +17,12 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("isDarkMode") === "true");
   const [isLeftMode, setIsLeftMode] = useState(localStorage.getItem("isLeftMode") === "true");
 
+
   useEffect(() => {
     localStorage.setItem("isDarkMode", isDarkMode);
     localStorage.setItem("isLeftMode", isLeftMode);
   }, [isDarkMode, isLeftMode]);
+  
 
   return (
     <BrowserRouter>

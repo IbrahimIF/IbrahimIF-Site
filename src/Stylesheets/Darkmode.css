@@ -92,7 +92,6 @@
 .dark-mode a.active {
   color: #000000;
   background-color: #263238;
-  border: 2px solid #454545;
 }
 
 /*the colors that appear when hoverd over the buttons*/

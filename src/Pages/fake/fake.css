@@ -4,25 +4,10 @@
     color: rgb(255, 255, 255);
   }
   .media {
-    padding-top: 50px;
     position: absolute;
     display: flex;
-padding-left: 240px;
-  }
-
-  
-
-  
-  @media screen and (min-width: 768px) {
-    .media {
-      width: 30%;
-      height: 30%;
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .media {
-      width: 20%;
-      height: 20%;
-    }
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center; /* Center child elements vertically */
+    width: 100%; /* Take up full width of parent element */
+    height: 100%; /* Take up full height of parent element */
   }

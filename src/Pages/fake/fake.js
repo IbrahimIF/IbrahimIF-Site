@@ -32,23 +32,32 @@ function Fake() {
               { type: 'image', url: 'https://i.postimg.cc/mkgq17LH/giganigga.jpg' },
               { type: 'image', url: 'https://i.postimg.cc/xTH7JjYg/troll-face-gif.jpg' },
 
-              { type: 'video', url: 'https://www.youtube.com/embed/_JuFBDI1jkg?autoplay=1&controls=0'}, 
-              { type: 'video', url: 'https://www.youtube.com/embed/ddWJatRxfz8?autoplay=1&controls=0'},
-              { type: 'video', url: 'https://www.youtube.com/embed/IGprEUpFmz0?autoplay=1&controls=0'},
-              { type: 'video', url: 'https://www.youtube.com/embed/IRPo671GHxI?autoplay=1&controls=0'},
-              { type: 'video', url: 'https://www.youtube.com/embed/yUGZwlLoZh0?autoplay=1&controls=0'},
-              { type: 'video', url: 'https://www.youtube.com/embed/K-bP87jsrW4?autoplay=1&controls=0'},
-              { type: 'video', url: 'https://www.youtube.com/embed/u3MFk4qTsFI?autoplay=1&controls=0'},
-              { type: 'video', url: 'https://www.youtube.com/embed/h7FJ9ddRNdA?autoplay=1&controls=0'},
+              { type: 'video', url: 'https://www.youtube.com/embed/_JuFBDI1jkg?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'}, 
+              { type: 'video', url: 'https://www.youtube.com/embed/ddWJatRxfz8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'video', url: 'https://www.youtube.com/embed/IGprEUpFmz0?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'video', url: 'https://www.youtube.com/embed/IRPo671GHxI?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'video', url: 'https://www.youtube.com/embed/yUGZwlLoZh0?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'video', url: 'https://www.youtube.com/embed/K-bP87jsrW4?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'video', url: 'https://www.youtube.com/embed/u3MFk4qTsFI?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'video', url: 'https://www.youtube.com/embed/h7FJ9ddRNdA?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
 
-              { type: 'short', url: 'https://www.youtube.com/embed/ny09IWBXVEo?autoplay=1&controls=0'},
-              { type: 'short', url: 'https://www.youtube.com/embed/MfA6NAha2K0?autoplay=1&controls=0'},
-              { type: 'short', url: 'https://www.youtube.com/embed/tY875eoXAj4?autoplay=1&controls=0'},
-              { type: 'short', url: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0', url2: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0'},
-              { type: 'short', url: 'https://www.youtube.com/embed/08XyCs4yVEU?autoplay=1&controls=0'},
-              { type: 'short', url: 'https://www.youtube.com/embed/SqE2J9V3a8A?autoplay=1&controls=0'},
-              { type: 'short', url: 'https://www.youtube.com/embed/5edf0roC98A?autoplay=1&controls=0'},
-              { type: 'short', url: '?autoplay=1&controls=0'},
+              { type: 'short', url: 'https://www.youtube.com/embed/ny09IWBXVEo?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'short', url: 'https://www.youtube.com/embed/MfA6NAha2K0?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'short', url: 'https://www.youtube.com/embed/tY875eoXAj4?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'short', url: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1', 
+                              url2: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
+                              url3: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1', 
+                              url4: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
+                              url5: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
+                              url6: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1', 
+                              url7: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
+                              url8: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1', 
+                              url9: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
+                              url10: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'short', url: 'https://www.youtube.com/embed/08XyCs4yVEU?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'short', url: 'https://www.youtube.com/embed/SqE2J9V3a8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'short', url: 'https://www.youtube.com/embed/5edf0roC98A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'short', url: '?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
 
               { type: 'horror', url: 'https://i.postimg.cc/XNFqJFZP/horror-image.png' },
               // Add more images and YouTube links to the list
@@ -74,16 +83,24 @@ function Fake() {
       } else if (media.type === 'video') {
         setTimeoutDuration(15000); // Set the timeout to 15 seconds
         return (
-          <div>
-            <iframe width="900" height="655" src={media.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <div style={{ pointerEvents: 'none' }}>
+            <iframe border= "" width="900" height="655" src={media.url} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media;"></iframe>
           </div>
         );
       } else if (media.type === 'short') {
         setTimeoutDuration(8000); // Set the timeout to 8 seconds
         return (
-          <div>
-            <iframe width="900" height="655" src={media.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-            <iframe width="700" height="455" src={media.url2} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <div style={{ pointerEvents: 'none' }} >
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;"></iframe>
+            <iframe width="900" height="655" src={media.url2} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
+            <iframe width="900" height="655" src={media.url3} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
+            <iframe width="900" height="655" src={media.url4} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
+            <iframe width="900" height="655" src={media.url5} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
+            <iframe width="900" height="655" src={media.url6} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
+            <iframe width="900" height="655" src={media.url7} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
+            <iframe width="900" height="655" src={media.url8} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
+            <iframe width="900" height="655" src={media.url9} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
+            <iframe width="900" height="655" src={media.url10} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media; " ></iframe>
           </div>
         );
       }
@@ -97,6 +114,7 @@ function Fake() {
     if (timeoutDuration !== null) {
       const timer = setTimeout(() => {
         navigate("/");
+        
       }, timeoutDuration);
 
       // Cleanup function
@@ -112,12 +130,10 @@ function Fake() {
   }
 
   return (
-    <div className="container2">
       <div className="media" onClick={refreshMedia}>
         {media}
         {media && media.props.className === "horror" && <p>{unknownText}     he    {unknownText}     sees     {unknownText}      you     {unknownText}</p>}
       </div>
-    </div>
   );
 }
 

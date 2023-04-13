@@ -27,7 +27,7 @@
   font-size: 17px;
   overflow: hidden;
   bottom: 25px;
-  border: 2px solid #1A1A1A;
+  border: 2px solid #000000;
   border-radius: 15px;
   box-sizing: border-box;
   color: #3B3B3B;
@@ -66,7 +66,6 @@
 a.active {
   color: #ffffff;
   background-color: #898989;
-  border: 2px solid #454545;
 }
 
 
