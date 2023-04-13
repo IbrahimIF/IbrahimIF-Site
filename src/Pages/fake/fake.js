@@ -84,7 +84,7 @@ function Fake() {
         setTimeoutDuration(15000); // Set the timeout to 15 seconds
         return (
           <div style={{ pointerEvents: 'none' }}>
-            <iframe border= "" width="900" height="655" src={media.url} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media;"></iframe>
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" frameborder="0" allow=" autoplay;  encrypted-media;"></iframe>
           </div>
         );
       } else if (media.type === 'short') {
