@@ -1,4 +1,4 @@
-# Personal Projects catalog 
+# Perosnal Portfolio WebSite
 
 This is a personal project that showcases my various accounts and projects. The website is built using React, and it's primarily designed to display my work experience and skills in a visually appealing way.
 
