@@ -49,17 +49,17 @@
 
 .navbar a:before {
   content: attr(name);
-  background-color: #263238;
+  background-color: #8d8d8d;
   padding: 16px 24px;
   position: absolute;
   top: 100%;
   bottom: 0;
   left: 0;
   right: 0;
-  transition: all 300ms cubic-bezier(0.190, 1.000, 0.560, 1.000);
+  transition: all 500ms cubic-bezier(0.190, 1.000, 0.560, 1.000);
   text-align: center;
   text-decoration: none;
-  color: #ffa6a6;
+  color: #ff7878;
 }
 
 
