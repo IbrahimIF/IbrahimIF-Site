@@ -6,14 +6,14 @@
   width: 200px;
   /* Change this to adjust the width of the box */
   height: 820px;
-  background-color: rgba(247, 247, 247, 0.601);
+  background-color: rgba(255, 255, 255, 0.722);
   /* Change this to adjust the background color and transparency */
   color: rgb(0, 0, 0);
   padding: 20px;
   transition: left 0.5s ease-in-out;
   z-index: 1;
   transition: 1s;
-  border: 2px solid rgb(200, 200, 200);
+  border: 0.5px solid rgb(134, 134, 134);
   border-radius: 5px;
 }
 
@@ -30,7 +30,7 @@
   border: 2px solid #000000;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #3B3B3B;
+  color: #000000;
   background-color: transparent;
   display:block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -49,7 +49,7 @@
 
 .navbar a:before {
   content: attr(name);
-  background-color: #8d8d8d;
+  background-color: #282c34;
   padding: 16px 24px;
   position: absolute;
   top: 100%;
@@ -59,13 +59,14 @@
   transition: all 500ms cubic-bezier(0.190, 1.000, 0.560, 1.000);
   text-align: center;
   text-decoration: none;
-  color: #ff7878;
+  color: #ffffff;
 }
 
 
 a.active {
-  color: #ffffff;
-  background-color: #898989;
+  color: #000000;
+  background-color: #dbf3fb;
+  border: 3px solid #368ef7;
 }
 
 

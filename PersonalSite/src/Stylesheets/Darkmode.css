@@ -30,7 +30,7 @@
 
 .dark-mode .box {
   background: #000000;
-  border: 2px solid rgb(32, 32, 32);
+  border: 0.5px solid rgb(82, 82, 82);
 }
 
 
@@ -78,20 +78,22 @@
 }
 
 .dark-mode .navbar {
-  background-color: rgba(17, 17, 17, 0.601);
+  background-color: rgba(0, 0, 0, 0.601);
   /* Change this to adjust the background color and transparency */
   color: rgb(255, 255, 255);
-  border: 2px solid rgb(32, 32, 32);
+  border: 2px solid rgb(53, 53, 53);
 }
 
 .dark-mode .navbar a{
   border: 2px solid #ffffff;
+  color: #000000;
   color: #ffffff;
 }
 
 .dark-mode a.active {
-  color: #000000;
-  background-color: #263238;
+  color: #ffffff;
+  border: 2px solid #499ff6;
+  background-color: #0f1b28;
 }
 
 /*the colors that appear when hoverd over the buttons*/
@@ -117,6 +119,6 @@
 }
 
 .dark-mode .navbar a:before {
-  background-color: #263238;
-  color: #ffa6a6;
+  background-color: #282c34;
+  color: #ffffff;
 }
