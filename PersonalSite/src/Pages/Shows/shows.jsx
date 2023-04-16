@@ -1,12 +1,11 @@
 import React from "react";
-import { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import {useEffect, useContext } from "react";
 import ThemeContext from "../../Components/Contexts/ThemeContext";
 import "./shows.css"
 
 function Show() {
 
-  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
+  const {isLeftMode, } = useContext(ThemeContext);
 
   useEffect(() => {
     document.querySelector(".navbar").classList.toggle("visible", isLeftMode);
@@ -18,11 +17,11 @@ function Show() {
   return (
     <div className="container">
 <div className="box">
-    <div class="textContainer">
+    <div className="textContainer">
       <br /> <br />
-      <div class="title">
-        <span class="block-title"></span>
-        <h1 class="firstText">Top 10 shows</h1>
+      <div className="title">
+        <span className="block-title"></span>
+        <h1 className="firstText">Top 10 shows</h1>
       </div>
     </div>
   </div>

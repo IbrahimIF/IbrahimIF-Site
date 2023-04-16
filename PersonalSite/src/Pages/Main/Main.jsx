@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import ThemeContext from "../../Components/Contexts/ThemeContext";
 import { useRandomText } from "../../Components/RandomText/useRandomText";
 
@@ -26,7 +26,7 @@ import Purple from "../../Assets/Images/pfpPurple.png";
 function Home() {
   //is used to move everything to the left and saves it as a prefrence within themecontext for other pages
   const unknownText = useRandomText();
-  const { isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode } = useContext(ThemeContext);
+  const { isDarkMode, isLeftMode,} = useContext(ThemeContext);
   useEffect(() => {
     document.querySelector(".navbar").classList.toggle("visible", isLeftMode);
     document.querySelector(".navbutton").classList.toggle("visible", isLeftMode);
@@ -58,7 +58,7 @@ return (
         }}
         className="pfpRed">
         <img alt="redpfp" src={Red} />
-          <div class="redBar">
+          <div className="redBar">
             <span>{" "}<FontAwesomeIcon icon={faYoutube} />{" "}Youtube</span>
           </div>
       </button>
@@ -79,9 +79,9 @@ return (
         document.querySelector(".pfpPurple").classList.remove("visible");
         document.body.classList.remove(isDarkMode ? "darkblue-mode" :"blue-mode");
         }}
-        class="pfpBlue">
+        className="pfpBlue">
         <img alt="bluepfp" src={Blue} />
-          <div class="blueBar">
+          <div className="blueBar">
             <span>{" "}<FontAwesomeIcon icon={faSteam} />{" "}Steam</span>
           </div>
       </button>
@@ -100,9 +100,9 @@ return (
         document.querySelector(".pfpPurple").classList.remove("visible");
         document.body.classList.remove(isDarkMode ? "darkyellow-mode" :"yellow-mode");
         }}
-        class="pfpYellow">
+        className="pfpYellow">
         <img alt="yellowpfp" src={Yellow} />
-          <div class="yellowBar">
+          <div className="yellowBar">
             <span>{" "}<FontAwesomeIcon icon={faGithub} />{" "}Github</span>
           </div>
       </button>
@@ -119,9 +119,9 @@ return (
         document.querySelector(".pfpPurple").classList.remove("visible");
         document.body.classList.remove(isDarkMode ? "darkgreen-mode" :"green-mode");
         }}
-        class="pfpGreen">
+        className="pfpGreen">
         <img alt="greenpfp" src={Green} />
-          <div class="greenBar">
+          <div className="greenBar">
             <span>{unknownText}</span>
           </div>
       </button>
@@ -136,7 +136,7 @@ return (
         onMouseOut={() => {
         document.body.classList.remove(isDarkMode ? "darkpurple-mode" : "purple-mode");
         }}
-        class="pfpPurple">
+        className="pfpPurple">
         <img alt="purplepfp" src={Purple} />
           <div className="purpleBar">
             <span>{" "}<FontAwesomeIcon icon={faDiscord} />{" "}Discord</span>
@@ -149,27 +149,27 @@ return (
 
 {/* section for info */}
   <div className="box">
-    <div class="textContainer">
+    <div className="textContainer">
       <br /> <br />
-      <div class="title">
-        <span class="block-title"></span>
-        <h1 class="firstText">Ibrahim Farrah</h1>
+      <div className="title">
+        <span className="block-title"></span>
+        <h1 className="firstText">Ibrahim Farrah</h1>
       </div>
 
-      <div class="subTitle">
-        <div class="block-subTitle"></div>
-        <p class="subText">20-year-old software engineer from the United Kingdom</p>
+      <div className="subTitle">
+        <div className="block-subTitle"></div>
+        <p className="subText">20-year-old software engineer from the United Kingdom</p>
       </div>
 
         <div className="icons">
-          <a class="icons" href="https://mail.google.com/mail/u/0/?zx=knxh55u8nye4#inbox">
-            <FontAwesomeIcon icon={faEnvelope} /><span class="icon-text">ibrahimfarrah30@</span>
+          <a className="icons" href="https://mail.google.com/mail/u/0/?zx=knxh55u8nye4#inbox">
+            <FontAwesomeIcon icon={faEnvelope} /><span className="icon-text">ibrahimfarrah30@</span>
           </a>
-          <a class="icons" href="https://twitter.com/home?lang=en">
-            <FontAwesomeIcon icon={faTwitter} /><span class="icon-text">Twitter</span>
+          <a className="icons" href="https://twitter.com/home?lang=en">
+            <FontAwesomeIcon icon={faTwitter} /><span className="icon-text">Twitter</span>
           </a>
-          <a class="icons" href="https://www.linkedin.com/in/ibrahim-farrah-b742471a6/">
-            <FontAwesomeIcon icon={faLinkedin} /><span class="icon-text">Linklden</span>
+          <a className="icons" href="https://www.linkedin.com/in/ibrahim-farrah-b742471a6/">
+            <FontAwesomeIcon icon={faLinkedin} /><span className="icon-text">Linklden</span>
           </a> 
       </div>
 

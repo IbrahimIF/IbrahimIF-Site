@@ -15,6 +15,21 @@ const Saved = () => {
     document.querySelector(".navbutton").classList.toggle("visible", isLeftMode);
     document.querySelector(".dark-button").classList.toggle("visible", isLeftMode);
     document.querySelector(".container").classList.toggle("visible", isLeftMode);
+    document.querySelector(".box").classList.toggle("visible", isLeftMode);
+    document.querySelector(".firstText").classList.toggle("visible", isLeftMode);
+
+    const subText = document.querySelector(".subText");
+    const icons = document.querySelector(".icons");
+    const Animea = document.querySelector(".Anime a");
+    if (subText) {
+      subText.classList.toggle("visible", isLeftMode);
+    }
+    if (icons) {
+      icons.classList.toggle("visible", isLeftMode);
+    }
+    if (Animea) {
+      Animea.classList.toggle("visible", isLeftMode);
+    }
   }, [isLeftMode]);
 
   return (

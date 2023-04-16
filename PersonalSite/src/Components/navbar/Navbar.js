@@ -53,7 +53,6 @@ const Navbar = () => {
       <button
         onClick={() => {
           setIsLeftMode(!isLeftMode);
-          document.querySelector(".subText").classList.toggle("visible");
         }}
         className="navbutton"
       >

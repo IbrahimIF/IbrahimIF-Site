@@ -51,24 +51,108 @@
         transition: 1s;
     }
 
-
-    @media (max-width: 680px) {
-        .subText.visible {
-          font-size: 15px;
-        }
-      }
-
-      /* Font size for tablets */
-@media (max-width: 625px) {
-    .subText.visible {
-      padding: 110px;
-      font-size: 12px;
-    }
-  }
   
   /* Font size for mobile devices */
-  @media (max-width: 480px) {
+  @media (max-width: 1033px) {
+    .box.visible {
+      width: 108%;
+      transition: 1s;
+    }
+  }
+
+  @media (max-width: 968px) {
+    .firstText.visible {
+      font-size: 25px;
+      transition: 1s;
+    }
+    
     .subText.visible {
-      font-size: 5px;
+      font-size: 15px;
+      transition: 1s;
+    }
+
+    .icons.visible {
+      font-size: 15px;
+      transition: 1s;
+    }
+
+  }
+
+  @media (max-width: 680px) {
+    .firstText.visible {
+      font-size: 25px;
+      transition: 1s;
+    }
+    
+    .subText.visible {
+      font-size: 15px;
+      transition: 1s;
+    }
+
+    .icons.visible {
+      font-size: 15px;
+      transition: 1s;
+    }
+
+  }
+
+
+
+/*when the navbar is opened*/
+  @media only screen and (max-width: 1000px) {
+    .Anime a.visible {
+      font-size: 15px;
+      width: 250%;
+      transition: 1s;
+    }
+    
+  }
+
+@media only screen and (max-width: 945px) {
+    .Anime a.visible {
+      font-size: 15px;
+      width: 250%;
+      left: -50px;
+      transition: 1s;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .Anime a.visible {
+      font-size: 12px;
+      width: 230%;
+      transition: 1s;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .Anime a.visible {
+      left: -60px;
+      transition: 1s;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .Anime a.visible {
+      left: -70px;
+      transition: 1s;
+    }
+  }
+
+  @media only screen and (max-width: 705px) {
+    .Anime a.visible {
+      left: -70px;
+      font-size: 12px;
+      width: 200%;
+      transition: 1s;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .Anime a.visible {
+      left: -100px;
+      font-size: 10px;
+      width: 200%;
+      transition: 1s;
     }
   }
