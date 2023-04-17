@@ -44,7 +44,7 @@ const Navbar = () => {
               Shows
             </Link>
             <br />
-            <Link to="/Anime" name="Anime" className={"link " +isLinkActive("/Anime")}>
+            <Link to="/Anime2" name="Anime" className={"link " +isLinkActive("/Anime2")}>
               Anime
             </Link>
           </ul>

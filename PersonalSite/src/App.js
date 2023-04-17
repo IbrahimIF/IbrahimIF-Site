@@ -9,7 +9,7 @@ import Fake from "./Pages/fake/fake";
 import Show from "./Pages/Shows/shows";
 import Project from "./Pages/Projects/Projects";
 import About from "./Pages/About/About";
-import Anime from "./Pages/Anime/Anime";
+import Anime2 from "./Pages/Anime2/Anime2";
 //import from "./Pages/";
 
 
@@ -31,7 +31,7 @@ function App() {
           <Route path="/" element={<Saved />}>
             <Route path="/" element={<Main />} />
             <Route path="/Show" element={<Show />} />
-            <Route path="/Anime" element={<Anime />} />
+            <Route path="/Anime2" element={<Anime2 />} />
             <Route path="/Project" element={<Project />} />
             <Route path="/About" element={<About />} />
           </Route>
