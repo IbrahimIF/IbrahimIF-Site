@@ -13,7 +13,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-
+import test from "../../Assets/Audio/Underbase： Fallen Down.mp3"
 
 //pfp images
 import "./Main.css";
@@ -23,10 +23,13 @@ import Yellow from "../../Assets/Images/pfpYellow.png";
 import Green from "../../Assets/Images/pfpGreen.png";
 import Purple from "../../Assets/Images/pfpPurple.png";
 
+
+
 function Home() {
   //is used to move everything to the left and saves it as a prefrence within themecontext for other pages
   const unknownText = useRandomText();
   const { isDarkMode, isLeftMode,} = useContext(ThemeContext);
+  var tests = document.getElementById("myAudio");
   useEffect(() => {
     document.querySelector(".navbar").classList.toggle("visible", isLeftMode);
     document.querySelector(".navbutton").classList.toggle("visible", isLeftMode);
@@ -37,6 +40,10 @@ function Home() {
   // html of the page
 return (
 <div className="container">
+
+<audio id="myAudio">
+  <source src={test} type="audio/mpeg"></source>
+</audio>
   <div className="button-container">
 
 {/* youtube profile picture */}
@@ -113,12 +120,15 @@ return (
       <button
         onMouseOver={() => {
         document.querySelector(".pfpPurple").classList.add("visible");
+        tests.play();
         document.body.classList.add(isDarkMode ? "darkgreen-mode" :"green-mode");
         }}
         onMouseOut={() => {
+        tests.pause();
         document.querySelector(".pfpPurple").classList.remove("visible");
         document.body.classList.remove(isDarkMode ? "darkgreen-mode" :"green-mode");
-        }}
+        
+      }}
         className="pfpGreen">
         <img alt="greenpfp" src={Green} />
           <div className="greenBar">
@@ -172,6 +182,8 @@ return (
             <FontAwesomeIcon icon={faLinkedin} /><span className="icon-text">Linklden</span>
           </a> 
       </div>
+     
+
 
     </div>
   </div>
