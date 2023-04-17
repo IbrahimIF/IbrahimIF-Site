@@ -29,11 +29,11 @@ function Anime() {
         </div>
       </div>
       <div className="Anime" >
-      <Link to="/Anime" className="one" name="#1">SteinsGate</Link>
+      <Link to="/Anime" className="one" name="#1"> <img width={150} src={SteinsGate} alt="random" /></Link>
         <br />
-        <Link to="/Anime" className="two" name="#2">Kekkai Sensen</Link>
+        <Link to="/Anime" className="two" name="#2"><img width={150} className="image" src={kekkeisensen} alt="random" /></Link>
         <br />
-        <Link to="/Anime" className="three" name="#3">Kekkai Sensen</Link>
+        <Link to="/Anime" className="three" name="#3"><div className="imagess">test</div></Link>
         <br />
       <Link to="/Anime" className="four" name="#4">Kekkai Sensen</Link>
         <br />

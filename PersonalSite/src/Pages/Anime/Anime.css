@@ -1,3 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.Title { grid-area: title; }
+.Honrouable { grid-area: mentions; }
+.number1 { grid-area: number1; }
+.number2 { grid-area: number2; }
+.number3 { grid-area: number3; }
+.top-10 { grid-area: top-10; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'title title number1 number1  top-10 top-10'
+    'title title number2 number2  top-10 top-10'
+    'title title number3 number3  top-10 top-10'
+    'mentions mentions mentions mentions top-10 top-10';
+  gap: 3px;
+  background-color: #2196F3;
+  padding-left: 50px;
+padding-top: 50px;
+padding-bottom: 10px;
+padding-right: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 50px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="Title">Title</div>
+  <div class="Honrouable">Honourable</div>
+  <div class="number1">1st</div>  
+  <div class="number2">2nd</div>
+  <div class="number3">3rd</div>
+  <div class="top-10">top</div>  
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*will target all the <a> elements (which are represented by the <Link> components) inside the element with the navbar class. */
 
 
@@ -39,6 +113,15 @@
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+}
+
+.imagess{
+  background-image: url('../../Assets/Image buttons/bloodblockadebattlefront.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-position: center center; 
+ width: 100px; 
+ height: 50px;
 }
 
 /*image*/
@@ -204,3 +287,6 @@
       transition: 1s;
     }
   }
+
+
+  
