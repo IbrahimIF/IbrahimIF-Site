@@ -12,7 +12,7 @@
   display: block;
   box-sizing: border-box;
   border-radius: 15px;
-  width: 300%;
+  width: 10000%;
   padding: 12%;
   border: 2px solid #ffffff;
   color: #ffffff;
@@ -141,13 +141,13 @@
 .Anime a.six:hover:after {
   top: 0;
 }.Anime a.six:after { 
-  background-image: url('../../Assets/Image buttons/My-Hero-Academia-Logo.png');
+  background-image: url('../../Assets/Image buttons/bizarre-adventure-jojo-bizarre-adventure-title-removebg-preview.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 /*number on the side*/
-.Anime a.seven:hover:before {
+.Anime a.six:hover:before {
   top: 0;
 }
 
@@ -198,13 +198,55 @@
 .Anime a.ten:hover:after {
   top: 0;
 }.Anime a.ten:after { 
-  background-image: url('../../Assets/Image buttons/one-piece.png');
+  background-image: url('../../Assets/Image buttons/Dr._Stone_Logo.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 /*number on the side*/
 .Anime a.ten:hover:before {
+  top: 0;
+}
+
+/*image title*/
+.Anime a.eleven:hover:after {
+  top: 0;
+}.Anime a.eleven:after { 
+  background-image: url('../../Assets/Image buttons/Dr._Stone_Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*number on the side*/
+.Anime a.eleven:hover:before {
+  top: 0;
+}
+
+/*image title*/
+.Anime a.twelve:hover:after {
+  top: 0;
+}.Anime a.twelve:after { 
+  background-image: url('../../Assets/Image buttons/Dr._Stone_Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*number on the side*/
+.Anime a.twelve:hover:before {
+  top: 0;
+}
+
+/*image title*/
+.Anime a.thirteen:hover:after {
+  top: 0;
+}.Anime a.thirteen:after { 
+  background-image: url('../../Assets/Image buttons/Dr._Stone_Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*number on the side*/
+.Anime a.thirteen:hover:before {
   top: 0;
 }
 
@@ -269,4 +311,53 @@
   }
 
 
-  
+  .Title {
+    margin: -79px 133px;
+}
+
+.text-section {
+    width: 100%;
+    margin: 99px -19px;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    min-height: 50px;
+}
+
+.text-section2 {
+  width: 100%;
+  margin: 99px -19px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+.text-section.show {
+  height: auto;
+  opacity: 1;
+}
+
+.box2 {
+  width: 100%;
+  overflow: hidden;
+  min-height: 72vh;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  border: 0.5px solid rgb(134, 134, 134);
+  transition: 1s;
+  padding: 20px;
+}
+
+.textContainer2{
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

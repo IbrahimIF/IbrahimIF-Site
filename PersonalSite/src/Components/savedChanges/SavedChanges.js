@@ -15,7 +15,6 @@ const Saved = () => {
     document.querySelector(".navbutton").classList.toggle("visible", isLeftMode);
     document.querySelector(".dark-button").classList.toggle("visible", isLeftMode);
     document.querySelector(".container").classList.toggle("visible", isLeftMode);
-    document.querySelector(".box").classList.toggle("visible", isLeftMode);
     document.querySelector(".firstText").classList.toggle("visible", isLeftMode);
 
     const subText = document.querySelector(".subText");
