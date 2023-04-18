@@ -109,6 +109,7 @@
   color: #ffffff;
 }
 
+/*image title*/
 .Anime a.four:hover:after {
   top: 0;
 }.Anime a.four:after { 
@@ -122,31 +123,58 @@
   top: 0;
 }
 
-
-
-.Anime a.five:hover::before {
+/*image title*/
+.Anime a.five:hover:after {
   top: 0;
-  background-image: url('');
+}.Anime a.five:after { 
+  background-image: url('../../Assets/Image buttons/one-punch-man-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.Anime a.six:hover::before {
+/*number on the side*/
+.Anime a.five:hover:before {
   top: 0;
-  background-image: url('');
 }
 
-.Anime a.seven:hover::before {
+/*image title*/
+.Anime a.six:hover:after {
   top: 0;
-  background-image: url('');
+}.Anime a.six:after { 
+  background-image: url('../../Assets/Image buttons/My-Hero-Academia-Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+/*number on the side*/
+.Anime a.seven:hover:before {
+  top: 0;
+}
+
+/*image title*/
+.Anime a.seven:hover:after {
+  top: 0;
+}.Anime a.seven:after { 
+  background-image: url('../../Assets/Image buttons/one-piece.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*number on the side*/
+.Anime a.seven:hover:before {
+  top: 0;
+}
+
+
 
 .Anime a.eight:hover::before {
   top: 0;
-  background-image: url('');
+  background-image: url('../../Assets/Image buttons/fullmetal.png');
 }
 
 .Anime a.nine:hover::before {
   top: 0;
-  background-image: url('');
+  background-image: url('../../Assets/Image buttons/death-note-removebg-preview.png');
 }
 
 .Anime a.ten:hover::before {
