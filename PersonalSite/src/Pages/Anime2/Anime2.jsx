@@ -15,7 +15,7 @@ import onepiece from "../../Assets/Image buttons/Onepiecebg.png"
 import fmab from "../../Assets/Image buttons/full-metal-alchemistbg.png"
 import note from "../../Assets/Image buttons/DeathNotebg.png"
 import stone from "../../Assets/Image buttons/dr-stonebg.png"
-import kisen from "../../Assets/Image buttons/Jujutsu Kisenbg.png"
+import jujutsu from "../../Assets/Image buttons/Jujutsu-Kisenbg.png"
 import slayer from "../../Assets/Image buttons/demon-slayer.png"
 
 function Anime() {
@@ -57,16 +57,14 @@ function Anime() {
               <h1 className="firstText">Top 10 anime</h1>
             </div>
           </div>
-          <div className={`text-section ${showExplanation && "show"}`}>
-            <p>{explanationTexts[showExplanation]}</p>
+          <div className="text-area">
+            <div className={`text-section ${showExplanation && "show"}`}>
+              <p>{explanationTexts[showExplanation]}</p>
+            </div>
           </div>
           <div className="text-section2">
             <h3>Honurable mentions:</h3>
-            <span>
-              1.
-              2.
-              3.
-            </span>
+            <span> </span>
           </div>
         </div>
         <div className="top-10">
@@ -109,7 +107,7 @@ function Anime() {
             </Link>
             <Link to="/Anime" alt="nichijou" name="#11" className="eleven" style={{backgroundImage: `url(${nichijou})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
-            <Link to="/Anime" alt="JujutsuKisen" name="#12" className="twelve" style={{backgroundImage: `url(${kisen})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+            <Link to="/Anime" alt="JujutsuKisen" name="#12" className="twelve" style={{backgroundImage: `url(${jujutsu})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link to="/Anime" alt="demonslayer" name="#13" className="thirteen" style={{backgroundImage: `url(${slayer})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
