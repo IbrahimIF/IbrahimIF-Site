@@ -147,7 +147,7 @@ function Anime() {
                 steinss.pause();
                   setShowExplanation(".");
               }} 
-            to="/Anime" alt="Steins Gate" name="#1" className="one" style={{backgroundImage: `url(${steins})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+            to="/Anime" alt="Steins Gate" name="#1" className="one" style={{backgroundImage: `url(${steins})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link  onMouseOver={() => {
               sensens.play();
@@ -157,7 +157,7 @@ function Anime() {
                 sensens.pause();
                 setShowExplanation(".");
               }} 
-            to="/Anime" alt="BloodBlockateBattlefront" name="#2" className="two" style={{backgroundImage: `url(${kekkeisensen})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+            to="/Anime" alt="BloodBlockateBattlefront" name="#2" className="two" style={{backgroundImage: `url(${kekkeisensen})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               Attacks.play();
@@ -167,7 +167,7 @@ function Anime() {
                 Attacks.pause();
                 setShowExplanation(".");
               }} 
-            to="/Anime" alt="Attack on Titan" name="#3" className="three" style={{backgroundImage: `url(${aot})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+            to="/Anime" alt="Attack on Titan" name="#3" className="three" style={{backgroundImage: `url(${aot})`, backgroundPosition: "center 20%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               tokyos.play();
@@ -187,7 +187,7 @@ function Anime() {
                 onepunchs.pause();
                 setShowExplanation(".");
               }} 
-            to="/Anime" alt="One punch man" name="#5" className="five" style={{backgroundImage: `url(${onePunch})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+            to="/Anime" alt="One punch man" name="#5" className="five" style={{backgroundImage: `url(${onePunch})`,  borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               jojos.play();
@@ -197,7 +197,7 @@ function Anime() {
                 jojos.pause();
                 setShowExplanation(".");
               }} 
-            to="/Anime" alt="jojo" name="#6" className="six" style={{backgroundImage: `url(${jojo})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+            to="/Anime" alt="jojo" name="#6" className="six" style={{backgroundImage: `url(${jojo})`, backgroundPosition: "center 44%",borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
                 onepieces.play();
@@ -217,7 +217,7 @@ function Anime() {
                 metals.pause();
                 setShowExplanation(".");
               }} 
-            to="/Anime" alt="Fullmetal aclhemist" name="#8" className="eight" style={{backgroundImage: `url(${fmab})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+            to="/Anime" alt="Fullmetal aclhemist" name="#8" className="eight" style={{backgroundImage: `url(${fmab})`, backgroundPosition: "center 40%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               notes.play();
@@ -227,7 +227,7 @@ function Anime() {
                 notes.pause();
                 setShowExplanation(".");
               }} 
-             to="/Anime" alt="DeathNote" name="#9" className="nine" style={{backgroundImage: `url(${note})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+             to="/Anime" alt="DeathNote" name="#9" className="nine" style={{backgroundImage: `url(${note})`, backgroundPosition: "center 60%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               stones.play();
@@ -247,7 +247,7 @@ function Anime() {
                 nichijous.pause();
                 setShowExplanation(".");
               }} 
-            o="/Anime" alt="nichijou" name="#11" className="eleven" style={{backgroundImage: `url(${nichijou})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+            o="/Anime" alt="nichijou" name="#11" className="eleven" style={{backgroundImage: `url(${nichijou})`, backgroundPosition: "center 100%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               jujutsus.play();
