@@ -47,7 +47,7 @@ function Anime() {
   var steinss = document.getElementById("steinss2");
   var onepieces = document.getElementById("onepieces2");
   var onepunchs = document.getElementById("onepunchs2");
-  var nichijous = document.getElementById("nichihjous2");
+  var nichijous = document.getElementById("nichijous2");
   var metals = document.getElementById("metals2");
   var notes = document.getElementById("notes2");
   var Attacks = document.getElementById("Attacks2");
@@ -91,7 +91,7 @@ function Anime() {
 <audio id="slayers2">
   <source src={steinsAudio} type="audio/mpeg"></source>
 </audio>
-<audio id="onpieces2">
+<audio id="onepieces2">
   <source src={onepieceAudio} type="audio/mpeg"></source>
 </audio>
 <audio id="onepunchs2">
@@ -200,7 +200,7 @@ function Anime() {
             to="/Anime" alt="jojo" name="#6" className="six" style={{backgroundImage: `url(${jojo})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
-              onepieces.play();
+                onepieces.play();
                 setShowExplanation("#3");
               }}
               onMouseOut={() => {
