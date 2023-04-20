@@ -32,6 +32,15 @@ import bbbfAudio from "../../Assets/Audio/Kekkai Sensen.mp3"
 import tokyoAudio from "../../Assets/Audio/Tokyo Ghoul.mp3"
 import JujutsuAudio from "../../Assets/Audio/Jujutsu Kaisen.mp3"
 
+function formatExplanationText(explanation) {
+  return explanation.map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
+}
+
 function Anime() {
 
   const [showExplanation, setShowExplanation] = useState("");
@@ -61,17 +70,21 @@ function Anime() {
   }, [isLeftMode]);
 
   const explanationTexts = {
+    "": [],
     "hover": "hover over a button to see the explanation",
-    "#1": "Explanation text for link 1 goes here...",
-    "#2": "Explanation text for link 2 goes here...",
-    "#3": "Explanation text for link 3 goes here...",
-    "#4": "Explanation text for link 4 goes here...",
-    "#5": "Explanation text for link 5 goes here...",
-    "#6": "Explanation text for link 6 goes here...",
-    "#7": "Explanation text for link 7 goes here...",
-    "#8": "Explanation text for link 8 goes here...",
-    "#9": "Explanation text for link 9 goes here...",
-    "#10": "Explanation text for link 10 goes here...",
+    "#1": ["#1 - Steins Gate","", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#2": ["#2 - Kekkei Sensen", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#3": ["#3 - Attack on Titan", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#4": ["#4 - Tokyo Ghoul", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#5": ["#5 - One Punch Man", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#6": ["#6 - Jojo's Bizzare Adventure", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#7": ["#7 - One Piece", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#8": ["#8 - Fullmetal Alchemist", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#9": ["#9 - Deathnote", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#10": ["#10 - Dr Stone", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#11": ["#11 - Nichijou", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#12": ["#12 - Jujutsu Kisen", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "#13": ["#13 - Demon Slayer", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
   };
 
   return (
@@ -118,26 +131,25 @@ function Anime() {
 <audio id="steinss2">
   <source src={steinsAudio} type="audio/mpeg"></source>
 </audio>
-      <div className="box2">
-        <div className="Title">
-          <div className="textContainer2">
-            <br /> <br />
+      <div className="boxAnime">
+        <div className="ContentBox">
+          <div className="titleContainer">
             <div className="title">
               <span className="block-title"></span>
               <h1 className="firstText">Top 10 anime</h1>
             </div>
           </div>
-          <div className="text-area">
+          <div className="text-box">
             <div className={`text-section ${showExplanation && "show"}`}>
-              <p>{explanationTexts[showExplanation]}</p>
+              <p>{formatExplanationText(explanationTexts[showExplanation])}</p>
             </div>
           </div>
-          <div className="text-section2">
+          <div className="text-box2">
             <h3>Honurable mentions:</h3>
             <span> </span>
           </div>
         </div>
-        <div className="top-10">
+          <div className="ContentAnime">
           <div className="Anime">
             <Link onMouseOver={() => {
               steinss.play();
@@ -145,7 +157,7 @@ function Anime() {
               }}
               onMouseOut={() => {
                 steinss.pause();
-                  setShowExplanation(".");
+                  setShowExplanation("");
               }} 
             to="/Anime" alt="Steins Gate" name="#1" className="one" style={{backgroundImage: `url(${steins})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
@@ -155,7 +167,7 @@ function Anime() {
               }}
               onMouseOut={() => {
                 sensens.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
             to="/Anime" alt="BloodBlockateBattlefront" name="#2" className="two" style={{backgroundImage: `url(${kekkeisensen})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
@@ -165,112 +177,113 @@ function Anime() {
               }}
               onMouseOut={() => {
                 Attacks.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
             to="/Anime" alt="Attack on Titan" name="#3" className="three" style={{backgroundImage: `url(${aot})`, backgroundPosition: "center 20%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               tokyos.play();
-                setShowExplanation("#3");
+                setShowExplanation("#4");
               }}
               onMouseOut={() => {
                 tokyos.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
             to="/Anime" alt="Tokyo Ghoul" name="#4" className="four" style={{backgroundImage: `url(${ghoul})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               onepunchs.play();
-                setShowExplanation("#3");
+                setShowExplanation("#5");
               }}
               onMouseOut={() => {
                 onepunchs.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
             to="/Anime" alt="One punch man" name="#5" className="five" style={{backgroundImage: `url(${onePunch})`,  borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               jojos.play();
-                setShowExplanation("#3");
+                setShowExplanation("#6");
               }}
               onMouseOut={() => {
                 jojos.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
             to="/Anime" alt="jojo" name="#6" className="six" style={{backgroundImage: `url(${jojo})`, backgroundPosition: "center 44%",borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
                 onepieces.play();
-                setShowExplanation("#3");
+                setShowExplanation("#7");
               }}
               onMouseOut={() => {
                 onepieces.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
             to="/Anime" alt="onepiece" name="#7" className="seven" style={{backgroundImage: `url(${onepiece})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               metals.play();
-                setShowExplanation("#3");
+                setShowExplanation("#8");
               }}
               onMouseOut={() => {
                 metals.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
             to="/Anime" alt="Fullmetal aclhemist" name="#8" className="eight" style={{backgroundImage: `url(${fmab})`, backgroundPosition: "center 40%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               notes.play();
-                setShowExplanation("#3");
+                setShowExplanation("#9");
               }}
               onMouseOut={() => {
                 notes.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
              to="/Anime" alt="DeathNote" name="#9" className="nine" style={{backgroundImage: `url(${note})`, backgroundPosition: "center 60%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               stones.play();
-                setShowExplanation("#3");
+                setShowExplanation("#10");
               }}
               onMouseOut={() => {
                 stones.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
              to="/Anime" alt="Dr Stone" name="#10" className="ten" style={{backgroundImage: `url(${stone})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               nichijous.play();
-                setShowExplanation("#3");
+                setShowExplanation("#11");
               }}
               onMouseOut={() => {
                 nichijous.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
             o="/Anime" alt="nichijou" name="#11" className="eleven" style={{backgroundImage: `url(${nichijou})`, backgroundPosition: "center 100%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               jujutsus.play();
-                setShowExplanation("#3");
+                setShowExplanation("#12");
               }}
               onMouseOut={() => {
                 jujutsus.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }}  
             to="/Anime" alt="JujutsuKisen" name="#12" className="twelve" style={{backgroundImage: `url(${jujutsu})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
             <Link onMouseOver={() => {
               slayers.play();
-                setShowExplanation("#3");
+                setShowExplanation("#13");
               }}
               onMouseOut={() => {
                 slayers.pause();
-                setShowExplanation(".");
+                setShowExplanation("");
               }} 
               to="/Anime" alt="demonslayer" name="#13" className="thirteen" style={{backgroundImage: `url(${slayer})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
             </Link>
           </div>
-        </div>
+          </div>
+          
       </div>
     </div>
   );
