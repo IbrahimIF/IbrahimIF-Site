@@ -3,7 +3,7 @@
 
 .boxAnime {
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   min-height: 72vh;
   background: #ffffff;
   display: flex;
@@ -17,13 +17,14 @@
 
 .ContentBox {
   width: 45%;
-  overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   height: 100vh;
+  position: sticky;
+  top: 10px; /*position sticky and top 10px is needed so the child elemnets move with the page scrolling*/
 }
 
 .ContentAnime {
@@ -53,7 +54,7 @@ justify-content: center;
   font-size: 18px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  min-height: 200px;
+  min-height: 300px;
   width: 100%;
 }
 .text-section.show {
@@ -63,7 +64,7 @@ justify-content: center;
 
 .text-box, .text-box2 {
 width: 50%;
-height: 200px;
+height: 300px;
 min-height: 50px;
 border: 0.5px solid rgb(134, 134, 134);
 }
@@ -71,6 +72,7 @@ border: 0.5px solid rgb(134, 134, 134);
 text-align: center;
 font-size: 18px;
 }
+
 
 .Anime {
   padding-top: 50px;
@@ -135,68 +137,68 @@ font-size: 18px;
   background-size: contain;
 }
 
-.Anime a.one:after {
+.Anime a.steins-gate:after {
   background-image: url('../../Assets/Image buttons/SteinsGate.png');
   background-position: 40%;
 }
 
-.Anime a.two:after {
+.Anime a.bb-bf:after {
   background-image: url('../../Assets/Image buttons/kekkeisensen.png');
   background-position: 40%;
 }
 
-.Anime a.three:after {
+.Anime a.attack-on-titan:after {
   background-image: url('../../Assets/Image buttons/Attack-On-TitanLogo.png');
   background-position: 30%;
 }
 
-.Anime a.four:after {
+.Anime a.tokyo-ghoul:after {
   background-image: url('../../Assets/Image buttons/tokyo-ghoul-logo.png');
   background-position: 30%;
 }
 
-.Anime a.five:after {
+.Anime a.one-punch:after {
   background-image: url('../../Assets/Image buttons/one-punch-man-logo.png');
   background-position: 0%;
   z-index: 10;
 }
 
-.Anime a.six:after {
+.Anime a.jojos-ba:after {
   background-image: url('../../Assets/Image buttons/bizarre-adventure-jojo-bizarre-adventure-title-removebg-preview.png');
   background-position: 40%;
 }
 
-.Anime a.seven:after {
+.Anime a.one-piece:after {
   background-image: url('../../Assets/Image buttons/one-piece.png');
   background-position: 40%;
 }
 
-.Anime a.eight:after {
+.Anime a.fmabh:after {
   background-image: url('../../Assets/Image buttons/fullmetal.png');
   background-position: 30%;
 }
 
-.Anime a.nine:after {
+.Anime a.death-note:after {
   background-image: url('../../Assets/Image buttons/death-note-removebg-preview.png');
   background-position: 30%;
 }
 
-.Anime a.ten:after{
+.Anime a.dr-stone:after{
   background-image: url('../../Assets/Image buttons/Dr._Stone_Logo.png');
   background-position: 50% 0;
 }
 
-.Anime a.eleven:after {
+.Anime a.nichijou:after {
   background-image: url('../../Assets/Image buttons/Nichijou_logo.png');
   background-position: 50% 0;
 }
 
-.Anime a.twelve:after {
+.Anime a.jujutsu-kisen:after {
   background-image: url('../../Assets/Image buttons/jujutsu-Kisen.png');
   background-position: 0;
 }
 
-.Anime a.thirteen:after {
+.Anime a.demon-slayer:after {
   background-image: url('../../Assets/Image buttons/demon-slayertitle.png');
   background-position: 40%;
 }

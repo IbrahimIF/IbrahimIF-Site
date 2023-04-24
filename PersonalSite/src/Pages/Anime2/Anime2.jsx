@@ -89,21 +89,20 @@ function formatExplanationText(explanation) {
   }, [isLeftMode]);
 
   const explanationTexts = {
-    "": [],
-    "hover": "hover over a button to see the explanation",
-    "#1": ["#1 - Steins Gate","", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#2": ["#2 - Kekkei Sensen", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#3": ["#3 - Attack on Titan", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#4": ["#4 - Tokyo Ghoul", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#5": ["#5 - One Punch Man", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#6": ["#6 - Jojo's Bizzare Adventure", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#7": ["#7 - One Piece", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#8": ["#8 - Fullmetal Alchemist", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#9": ["#9 - Deathnote", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#10": ["#10 - Dr Stone", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#11": ["#11 - Nichijou", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#12": ["#12 - Jujutsu Kisen", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
-    "#13": ["#13 - Demon Slayer", "", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum", "lorem ipsum lorem ipsum"],
+    "": ["its very difficult to rank anime"],
+    "#1": ["#1 - Fullmetal Alchemist", "", "10/10 songs", "comes full circle and nothings left behind", "compacted story, keeps you entertained", "10/10 writing, watched it 3 times", "", "I like it 10/10 would recommend to people who want to start on anime"],
+    "#2": ["#2 - One Punch Man", "", "Saitama vs goku", "saitama vs suoperman", "saitama vs saitama", "saitama vs one punchman", "", "I like it 9/10 would recommend to people who want to start on anime"],
+    "#3": ["#3 - Attack on Titan", "", "very good", "Very good", "VERY GOOD", "too many finals in the title", "", "I like it 8.9/10 would recommend to people who don't like anime or are too edgy"],
+    "#4": ["#4 - Steins Gate","", "About time travelling nuff said", "some parts drag out, however the anime's best parts are the twists and shock value of the story", "its also based off a game", "", "feels very realistic I like it 9/10"],
+    "#5": ["#5 - Kekkei Sensen", "", "best parts are the chase scenes", "", "I like it, 10/10, would watch again"],
+    "#6": ["#6 - Dr Stone", "", "YES", "10/10 song", "Animation is 10/10", "I like it science and stuff, taught me more then my science lessons", "", "I like it 9/10"],
+    "#7": ["#7 - Jujutsu Kisen", "", "Animation is sick 10/10", "song is elite", "that white haired guy is overatted", "", "I like it 9/10"],
+    "#8": ["#8 - Nichijou", "", "very random", "I like random", "as in VERY RANDOM", "floring a deer in a wwe style reastling match out of no where", "opening is 100/10", "", "I like it 8.9/10"],
+    "#9": ["#9 - Jojo's Bizzare Adventure", "", "part 1 is elite", "part 2 is leite", "part 3 is a dub", "part 4 is 10/10", "part 5 I haven't watched", "part 6 (I know its out)", "", "I like it 7.5/10 "],
+    "#10": ["#10 - One Piece", "", "stoped at episode 518 in 2016", "cba for fishman islnad", "G8 arc is best arc 10/10", "I like chase scenes", "I WATCHED DUBBED GO AWAY", "", "I like it 7.8/10 would recommend to people who can firm 1000 episodes"],
+    "#11": ["#11 - Demon Slayer", "", "Animation is elite", "song is elite", "the anime is overated", "8/10"],
+    "#12": ["#12 - Tokyo Ghoul", "", "season 1 elite", "opening is elite", "season 2 fell off (not as hard as promise neverland)", "season 3 makes me want to vomit", "", "I like season 1 and 2 only it 8/10 "],
+    "#13": ["#13 - Deathnote", "", "I take achip and eat it", "L", "near is shite", "I like the first part and the big brain moves in the anime", "", "I like it 8.9/10"],
   };
 
   return (
@@ -123,144 +122,92 @@ function formatExplanationText(explanation) {
           </div>
           <div className="text-box2">
             <h3>Honurable mentions:</h3>
-            <span> </span>
+            <span> my hero academia, vinland saga, lupin III, promised neverland</span>
           </div>
         </div>
           <div className="ContentAnime">
           <div className="Anime">
-            <Link onMouseOver={() => {
-              steinsAudioHook.play();
-                setShowExplanation("#1");
-              }}
-              onMouseOut={() => {
-                steinsAudioHook.stop();
-                  setShowExplanation("");
-              }} 
-            to="/Anime" alt="Steins Gate" name="#1" className="one" style={{backgroundImage: `url(${steins})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link  onMouseOver={() => {
-              bbbfAudioHook.play();
-                setShowExplanation("#2");
-              }}
-              onMouseOut={() => {
-                bbbfAudioHook.stop();
-                setShowExplanation("");
-              }} 
-            to="/Anime" alt="BloodBlockateBattlefront" name="#2" className="two" style={{backgroundImage: `url(${kekkeisensen})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              aotAudioHook.play();
-                setShowExplanation("#3");
-              }}
-              onMouseOut={() => {
-                aotAudioHook.stop();
-                setShowExplanation("");
-              }} 
-            to="/Anime" alt="Attack on Titan" name="#3" className="three" style={{backgroundImage: `url(${aot})`, backgroundPosition: "center 20%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              tokyoAudioHook.play();
-                setShowExplanation("#4");
-              }}
-              onMouseOut={() => {
-                tokyoAudioHook.stop();
-                setShowExplanation("");
-              }} 
-            to="/Anime" alt="Tokyo Ghoul" name="#4" className="four" style={{backgroundImage: `url(${ghoul})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              onepunchAudioHook.play();
-                setShowExplanation("#5");
-              }}
-              onMouseOut={() => {
-                onepunchAudioHook.stop();
-                setShowExplanation("");
-              }} 
-            to="/Anime" alt="One punch man" name="#5" className="five" style={{backgroundImage: `url(${onePunch})`,  borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              jojoAudioHook.play();
-                setShowExplanation("#6");
-              }}
-              onMouseOut={() => {
-                jojoAudioHook.stop();
-                setShowExplanation("");
-              }} 
-            to="/Anime" alt="jojo" name="#6" className="six" style={{backgroundImage: `url(${jojo})`, backgroundPosition: "center 44%",borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-                onepieceAudioHook.play();
-                setShowExplanation("#7");
-              }}
-              onMouseOut={() => {
-                onepieceAudioHook.stop();
-                setShowExplanation("");
-              }} 
-            to="/Anime" alt="onepiece" name="#7" className="seven" style={{backgroundImage: `url(${onepiece})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              fmabAudioHook.play();
-                setShowExplanation("#8");
-              }}
-              onMouseOut={() => {
-                fmabAudioHook.stop();
-                setShowExplanation("");
-              }} 
-            to="/Anime" alt="Fullmetal aclhemist" name="#8" className="eight" style={{backgroundImage: `url(${fmab})`, backgroundPosition: "center 40%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              noteAudioHook.play();
-                setShowExplanation("#9");
-              }}
-              onMouseOut={() => {
-                noteAudioHook.stop();
-                setShowExplanation("");
-              }} 
-             to="/Anime" alt="DeathNote" name="#9" className="nine" style={{backgroundImage: `url(${note})`, backgroundPosition: "center 60%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-             drstoneAudioHook.play();
-                setShowExplanation("#10");
-              }}
-              onMouseOut={() => {
-                drstoneAudioHook.stop();
-                setShowExplanation("");
-              }} 
-             to="/Anime" alt="Dr Stone" name="#10" className="ten" style={{backgroundImage: `url(${stone})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              nichijouAudioHook.play();
-                setShowExplanation("#11");
-              }}
-              onMouseOut={() => {
-                nichijouAudioHook.stop();
-                setShowExplanation("");
-              }} 
-            o="/Anime" alt="nichijou" name="#11" className="eleven" style={{backgroundImage: `url(${nichijou})`, backgroundPosition: "center 100%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              JujutsuAudioHook.play();
-                setShowExplanation("#12");
-              }}
-              onMouseOut={() => {
-                JujutsuAudioHook.stop();
-                setShowExplanation("");
-              }}  
-            to="/Anime" alt="JujutsuKisen" name="#12" className="twelve" style={{backgroundImage: `url(${jujutsu})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
-            <Link onMouseOver={() => {
-              slayerAudioHook.play();
-                setShowExplanation("#13");
-              }}
-              onMouseOut={() => {
-                slayerAudioHook.stop();
-                setShowExplanation("");
-              }} 
-              to="/Anime" alt="demonslayer" name="#13" className="thirteen" style={{backgroundImage: `url(${slayer})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
-            </Link>
+
+        {/*Fullmetal Alchemist*/}
+        <Link onMouseOver={() => { fmabAudioHook.play(); setShowExplanation("#1"); }}
+              onMouseOut={() => { fmabAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood?q=fullmeta&cat=anime" alt="Fullmetal Alchemist" name="#8" className="fmabh" style={{backgroundImage: `url(${fmab})`, backgroundPosition: "center 40%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/* One Punch Man*/}
+        <Link onMouseOver={() => { onepunchAudioHook.play(); setShowExplanation("#2"); }}
+              onMouseOut={() => { onepunchAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/30276/One_Punch_Man?q=one%20punch&cat=anime" alt="One Punch Man" name="#5" className="one-punch" style={{backgroundImage: `url(${onePunch})`,  borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*Attack on Titan */}
+        <Link onMouseOver={() => { aotAudioHook.play(); setShowExplanation("#3"); }}
+              onMouseOut={() => { aotAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin?q=attack%20on%20tit&cat=anime" alt="Attack on Titan" name="#3" className="attack-on-titan" style={{backgroundImage: `url(${aot})`, backgroundPosition: "center 20%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*Steins Gate*/}
+        <Link onMouseOver={() => { steinsAudioHook.play(); setShowExplanation("#4");}}
+              onMouseOut={() => { steinsAudioHook.stop(); setShowExplanation("");}} 
+              to="https://myanimelist.net/anime/9253/Steins_Gate?q=steins%20gate&cat=anime" alt="Steins Gate" name="#1" className="steins-gate" style={{backgroundImage: `url(${steins})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+      
+        {/*Blood Blockade Battlefront*/}
+        <Link onMouseOver={() => { bbbfAudioHook.play(); setShowExplanation("#5"); }}
+              onMouseOut={() => { bbbfAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/24439/Kekkai_Sensen?q=blood%20blockade&cat=anime" alt="Blood Blockade Battlefront" name="#2" className="bb-bf" style={{backgroundImage: `url(${kekkeisensen})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*Dr. Stone*/}
+        <Link onMouseOver={() => { drstoneAudioHook.play(); setShowExplanation("#6"); }}
+              onMouseOut={() => { drstoneAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/38691/Dr_Stone?q=dr%20stone&cat=anime" alt="Dr Stone" name="#10" className="dr-stone" style={{backgroundImage: `url(${stone})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*Jujutsu Kaisen*/}
+        <Link onMouseOver={() => { JujutsuAudioHook.play(); setShowExplanation("#7"); }}
+              onMouseOut={() => { JujutsuAudioHook.stop(); setShowExplanation(""); }}  
+              to="https://myanimelist.net/anime/40748/Jujutsu_Kaisen?q=jujutsu&cat=anime" alt="Jujutsu Kaisen" name="#12" className="jujutsu-kisen" style={{backgroundImage: `url(${jujutsu})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*Nichijou*/}
+        <Link onMouseOver={() => { nichijouAudioHook.play(); setShowExplanation("#8"); }}
+              onMouseOut={() => { nichijouAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/10165/Nichijou?q=nichi&cat=anime" alt="Nichijou" name="#11" className="nichijou" style={{backgroundImage: `url(${nichijou})`, backgroundPosition: "center 100%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*JoJo's Bizarre Adventure*/}
+        <Link onMouseOver={() => { jojoAudioHook.play(); setShowExplanation("#9"); }}
+              onMouseOut={() => { jojoAudioHook.stop(); setShowExplanation("");}} 
+              to="https://myanimelist.net/anime/14719/JoJo_no_Kimyou_na_Bouken_TV?q=jojo&cat=anime" alt="JoJo's Bizarre Adventure" name="#6" className="jojos-ba" style={{backgroundImage: `url(${jojo})`, backgroundPosition: "center 44%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*One Piece*/}
+        <Link onMouseOver={() => { onepieceAudioHook.play(); setShowExplanation("#10"); }}
+              onMouseOut={() => { onepieceAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/21/One_Piece" alt="One Piece" name="#7" className="one-piece" style={{backgroundImage: `url(${onepiece})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*Demon Slayer*/}
+        <Link onMouseOver={() => { slayerAudioHook.play(); setShowExplanation("#11"); }}
+              onMouseOut={() => { slayerAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba?q=demon&cat=anime" alt="Demon Slayer" name="#13" className="demon-slayer" style={{backgroundImage: `url(${slayer})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*Death Note*/}
+        <Link onMouseOver={() => { noteAudioHook.play(); setShowExplanation("#13"); }}
+              onMouseOut={() => { noteAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/1535/Death_Note?q=deathnote&cat=anime" alt="Death Note" name="#9" className="death-note" style={{backgroundImage: `url(${note})`, backgroundPosition: "center 60%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
+        {/*Tokyo Ghoul*/}
+        <Link onMouseOver={() => { tokyoAudioHook.play(); setShowExplanation("#12");}}
+              onMouseOut={() => { tokyoAudioHook.stop(); setShowExplanation(""); }} 
+              to="https://myanimelist.net/anime/22319/Tokyo_Ghoul?q=tok&cat=anime" alt="Tokyo Ghoul" name="#4" className="tokyo-ghoul" style={{backgroundImage: `url(${ghoul})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+        </Link>
+
           </div>
           </div>
-          
       </div>
     </div>
   );
