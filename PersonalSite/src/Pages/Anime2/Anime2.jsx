@@ -131,79 +131,79 @@ function formatExplanationText(explanation) {
         {/*Fullmetal Alchemist*/}
         <Link onMouseOver={() => { fmabAudioHook.play(); setShowExplanation("#1"); }}
               onMouseOut={() => { fmabAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood?q=fullmeta&cat=anime" alt="Fullmetal Alchemist" name="#8" className="fmabh" style={{backgroundImage: `url(${fmab})`, backgroundPosition: "center 40%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood?q=fullmeta&cat=anime" alt="Fullmetal Alchemist" name="#1"  className="one fmabh" style={{backgroundImage: `url(${fmab})`, backgroundPosition: "center 40%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/* One Punch Man*/}
         <Link onMouseOver={() => { onepunchAudioHook.play(); setShowExplanation("#2"); }}
               onMouseOut={() => { onepunchAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/30276/One_Punch_Man?q=one%20punch&cat=anime" alt="One Punch Man" name="#5" className="one-punch" style={{backgroundImage: `url(${onePunch})`,  borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/30276/One_Punch_Man?q=one%20punch&cat=anime" alt="One Punch Man" name="#2"  className="two one-punch" style={{backgroundImage: `url(${onePunch})`,  borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*Attack on Titan */}
         <Link onMouseOver={() => { aotAudioHook.play(); setShowExplanation("#3"); }}
               onMouseOut={() => { aotAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin?q=attack%20on%20tit&cat=anime" alt="Attack on Titan" name="#3" className="attack-on-titan" style={{backgroundImage: `url(${aot})`, backgroundPosition: "center 20%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin?q=attack%20on%20tit&cat=anime" alt="Attack on Titan" name="#3" className="three attack-on-titan" style={{backgroundImage: `url(${aot})`, backgroundPosition: "center 20%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*Steins Gate*/}
         <Link onMouseOver={() => { steinsAudioHook.play(); setShowExplanation("#4");}}
               onMouseOut={() => { steinsAudioHook.stop(); setShowExplanation("");}} 
-              to="https://myanimelist.net/anime/9253/Steins_Gate?q=steins%20gate&cat=anime" alt="Steins Gate" name="#1" className="steins-gate" style={{backgroundImage: `url(${steins})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/9253/Steins_Gate?q=steins%20gate&cat=anime" alt="Steins Gate" name="#4" className="steins-gate" style={{backgroundImage: `url(${steins})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
       
         {/*Blood Blockade Battlefront*/}
         <Link onMouseOver={() => { bbbfAudioHook.play(); setShowExplanation("#5"); }}
               onMouseOut={() => { bbbfAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/24439/Kekkai_Sensen?q=blood%20blockade&cat=anime" alt="Blood Blockade Battlefront" name="#2" className="bb-bf" style={{backgroundImage: `url(${kekkeisensen})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/24439/Kekkai_Sensen?q=blood%20blockade&cat=anime" alt="Blood Blockade Battlefront" name="#5" className="bb-bf" style={{backgroundImage: `url(${kekkeisensen})`, backgroundPosition: "center 10%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*Dr. Stone*/}
         <Link onMouseOver={() => { drstoneAudioHook.play(); setShowExplanation("#6"); }}
               onMouseOut={() => { drstoneAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/38691/Dr_Stone?q=dr%20stone&cat=anime" alt="Dr Stone" name="#10" className="dr-stone" style={{backgroundImage: `url(${stone})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/38691/Dr_Stone?q=dr%20stone&cat=anime" alt="Dr Stone" name="#6" className="dr-stone" style={{backgroundImage: `url(${stone})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*Jujutsu Kaisen*/}
         <Link onMouseOver={() => { JujutsuAudioHook.play(); setShowExplanation("#7"); }}
               onMouseOut={() => { JujutsuAudioHook.stop(); setShowExplanation(""); }}  
-              to="https://myanimelist.net/anime/40748/Jujutsu_Kaisen?q=jujutsu&cat=anime" alt="Jujutsu Kaisen" name="#12" className="jujutsu-kisen" style={{backgroundImage: `url(${jujutsu})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/40748/Jujutsu_Kaisen?q=jujutsu&cat=anime" alt="Jujutsu Kaisen" name="#7" className="jujutsu-kisen" style={{backgroundImage: `url(${jujutsu})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*Nichijou*/}
         <Link onMouseOver={() => { nichijouAudioHook.play(); setShowExplanation("#8"); }}
               onMouseOut={() => { nichijouAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/10165/Nichijou?q=nichi&cat=anime" alt="Nichijou" name="#11" className="nichijou" style={{backgroundImage: `url(${nichijou})`, backgroundPosition: "center 100%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/10165/Nichijou?q=nichi&cat=anime" alt="Nichijou" name="#8" className="nichijou" style={{backgroundImage: `url(${nichijou})`, backgroundPosition: "center 100%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*JoJo's Bizarre Adventure*/}
         <Link onMouseOver={() => { jojoAudioHook.play(); setShowExplanation("#9"); }}
               onMouseOut={() => { jojoAudioHook.stop(); setShowExplanation("");}} 
-              to="https://myanimelist.net/anime/14719/JoJo_no_Kimyou_na_Bouken_TV?q=jojo&cat=anime" alt="JoJo's Bizarre Adventure" name="#6" className="jojos-ba" style={{backgroundImage: `url(${jojo})`, backgroundPosition: "center 44%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/14719/JoJo_no_Kimyou_na_Bouken_TV?q=jojo&cat=anime" alt="JoJo's Bizarre Adventure" name="#9" className="jojos-ba" style={{backgroundImage: `url(${jojo})`, backgroundPosition: "center 44%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*One Piece*/}
         <Link onMouseOver={() => { onepieceAudioHook.play(); setShowExplanation("#10"); }}
               onMouseOut={() => { onepieceAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/21/One_Piece" alt="One Piece" name="#7" className="one-piece" style={{backgroundImage: `url(${onepiece})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/21/One_Piece" alt="One Piece" name="#10" className="one-piece" style={{backgroundImage: `url(${onepiece})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*Demon Slayer*/}
         <Link onMouseOver={() => { slayerAudioHook.play(); setShowExplanation("#11"); }}
               onMouseOut={() => { slayerAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba?q=demon&cat=anime" alt="Demon Slayer" name="#13" className="demon-slayer" style={{backgroundImage: `url(${slayer})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba?q=demon&cat=anime" alt="Demon Slayer" name="#11" className="demon-slayer" style={{backgroundImage: `url(${slayer})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*Death Note*/}
         <Link onMouseOver={() => { noteAudioHook.play(); setShowExplanation("#13"); }}
               onMouseOut={() => { noteAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/1535/Death_Note?q=deathnote&cat=anime" alt="Death Note" name="#9" className="death-note" style={{backgroundImage: `url(${note})`, backgroundPosition: "center 60%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/1535/Death_Note?q=deathnote&cat=anime" alt="Death Note" name="#12" className="death-note" style={{backgroundImage: `url(${note})`, backgroundPosition: "center 60%", borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
         {/*Tokyo Ghoul*/}
         <Link onMouseOver={() => { tokyoAudioHook.play(); setShowExplanation("#12");}}
               onMouseOut={() => { tokyoAudioHook.stop(); setShowExplanation(""); }} 
-              to="https://myanimelist.net/anime/22319/Tokyo_Ghoul?q=tok&cat=anime" alt="Tokyo Ghoul" name="#4" className="tokyo-ghoul" style={{backgroundImage: `url(${ghoul})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
+              to="https://myanimelist.net/anime/22319/Tokyo_Ghoul?q=tok&cat=anime" alt="Tokyo Ghoul" name="#13" className="tokyo-ghoul" style={{backgroundImage: `url(${ghoul})`, borderRadius: "0.375rem", backgroundSize: "cover", height: "100px", zIndex: "5"}}>
         </Link>
 
           </div>

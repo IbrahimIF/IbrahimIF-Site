@@ -88,7 +88,6 @@ font-size: 18px;
   padding: 12%;
   border: 2px solid #ffffff;
   color: #ffffff;
-  background-color: transparent;
   font-size: 17px;
   font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
@@ -106,7 +105,7 @@ font-size: 18px;
   bottom: 0;
   left: 0;
   right: 1;
-  background-color: #323232;
+  background: #2d2d2d;
   transition: all 1s cubic-bezier(0.190, 1.000, 0.560, 1.000);
   text-align: center;
   text-decoration: none;
@@ -207,19 +206,24 @@ font-size: 18px;
   top: 0;
 }
 
+
 .Anime a.one:before {
-  background-color: #C9AE5D;
-  color: #ffffff;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  color: #fff2ca;
 }
 
 .Anime a.two:before {
-  background-color: #BEBEBE;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #C0C0C0 0%, #B3B3B3 8%, #7D7D7D 30%, #6B6B6B 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #F2F2F2 8%, #A9A9A9 25%, #4D4D4D 62.5%, #4D4D4D 100%);
+  color: #b5b5b5;
 }
 
 .Anime a.three:before {
-  background-color: #8B5A2B;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #CD7F32 0%, #B26B1E 8%, #6B3F19 30%, #5A3516 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #F7D7BC 8%, #A56729 25%, #4C2F1C 62.5%, #4C2F1C 100%);
+  color: #ffe5d0;
 }
-
 
 @media screen and (max-width: 480px) {
   .Anime a {
