@@ -10,14 +10,12 @@
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 15px;
-  border: 0.5px solid rgb(255, 0, 0);
   transition: 1s;
   padding: 20px;
 }
 
 
 .ContentBox {
-  border: 0.5px solid rgb(117, 117, 117);
   width: 45%;
   overflow: hidden;
   display: flex;
@@ -29,7 +27,6 @@
 }
 
 .ContentAnime {
-  border: 0.5px solid rgb(134, 134, 134);
   width: 50%;
   overflow: hidden;
   display: flex;
@@ -45,7 +42,6 @@ display: flex;
 justify-content:flex-end;
 flex-direction: column;
 flex-wrap: wrap;
-border: 0.5px solid rgb(134, 134, 134);
 width: 50%;
 justify-content: center;
 }
@@ -57,34 +53,24 @@ justify-content: center;
   font-size: 18px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  border: 0.5px solid rgb(134, 134, 134);
   min-height: 200px;
   width: 100%;
 }
+.text-section.show {
+  height: auto;
+  opacity: 1;
+  }
 
-.text-box {
+.text-box, .text-box2 {
 width: 50%;
 height: 200px;
 min-height: 50px;
 border: 0.5px solid rgb(134, 134, 134);
-border: 0.5px solid rgb(134, 134, 134);
 }
-
 .text-box2 {
-height: 200px;
-width: 50%;
 text-align: center;
 font-size: 18px;
-border: 0.5px solid rgb(134, 134, 134);
 }
-
-
-.text-section.show {
-height: auto;
-opacity: 1;
-border: 0.5px solid rgb(134, 134, 134);
-}
-
 
 .Anime {
   padding-top: 50px;
@@ -140,212 +126,96 @@ border: 0.5px solid rgb(134, 134, 134);
 /* 1-10 Hover Rules */
 
 /*image on the side*/
-.Anime a.one:hover:after {
+.Anime a:hover:after {
   top: 0;
-}.Anime a.one:after { 
+}
+
+.Anime a:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Anime a.one:after {
   background-image: url('../../Assets/Image buttons/SteinsGate.png');
-  background-repeat: no-repeat;
   background-position: 40%;
-  background-size: contain;
 }
 
-/*number on the side*/
-.Anime a.one:hover:before {
-  top: 0;
-}.Anime a.one:before { /**/
-  background-color: #C9AE5D;
-  color: #ffffff;
-}
-
-
-
-/*image title*/
-.Anime a.two:hover:after {
-  top: 0;
-}.Anime a.two:after { 
+.Anime a.two:after {
   background-image: url('../../Assets/Image buttons/kekkeisensen.png');
-  background-repeat: no-repeat;
   background-position: 40%;
-  background-size: contain;
 }
 
-/*number on the side*/
-.Anime a.two:hover:before {
-  top: 0;
-}.Anime a.two:before {
-  background-color: #BEBEBE;
-  color: #ffffff;
-}
-
-/*image title*/
-.Anime a.three:hover:after {
-  top: 0;
-}.Anime a.three:after { 
+.Anime a.three:after {
   background-image: url('../../Assets/Image buttons/Attack-On-TitanLogo.png');
-  background-repeat: no-repeat;
   background-position: 30%;
-  background-size: contain;
 }
 
-/*number on the side*/
-.Anime a.three:hover:before {
-  top: 0;
-}.Anime a.three:before {
-  background-color: #8B5A2B;
-  color: #ffffff;
-}
-
-/*image title*/
-.Anime a.four:hover:after {
-  top: 0;
-}.Anime a.four:after { 
+.Anime a.four:after {
   background-image: url('../../Assets/Image buttons/tokyo-ghoul-logo.png');
-  background-repeat: no-repeat;
   background-position: 30%;
-  background-size: contain;
 }
 
-/*number on the side*/
-.Anime a.four:hover:before {
-  top: 0;
-}
-
-/*image title*/
-.Anime a.five:hover:after {
-  top: 0;
-}.Anime a.five:after { 
+.Anime a.five:after {
   background-image: url('../../Assets/Image buttons/one-punch-man-logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
   background-position: 0%;
   z-index: 10;
 }
 
-/*number on the side*/
-.Anime a.five:hover:before {
-  top: 0;
-}
-
-/*image title*/
-.Anime a.six:hover:after {
-  top: 0;
-}.Anime a.six:after { 
+.Anime a.six:after {
   background-image: url('../../Assets/Image buttons/bizarre-adventure-jojo-bizarre-adventure-title-removebg-preview.png');
-  background-repeat: no-repeat;
-  background-size: contain;
   background-position: 40%;
 }
 
-/*number on the side*/
-.Anime a.six:hover:before {
-  top: 0;
-}
-
-/*image title*/
-.Anime a.seven:hover:after {
-  top: 0;
-}.Anime a.seven:after { 
+.Anime a.seven:after {
   background-image: url('../../Assets/Image buttons/one-piece.png');
-  background-repeat: no-repeat;
-  background-size: contain;
   background-position: 40%;
 }
 
-/*number on the side*/
-.Anime a.seven:hover:before {
-  top: 0;
-}
-
-/*image title*/
-.Anime a.eight:hover:after {
-  top: 0;
-}.Anime a.eight:after { 
+.Anime a.eight:after {
   background-image: url('../../Assets/Image buttons/fullmetal.png');
-  background-repeat: no-repeat;
-  background-size: contain;
   background-position: 30%;
 }
 
-/*number on the side*/
-.Anime a.eight:hover:before {
-  top: 0;
-}
-
-
-/*image title*/
-.Anime a.nine:hover:after {
-  top: 0;
-}.Anime a.nine:after { 
+.Anime a.nine:after {
   background-image: url('../../Assets/Image buttons/death-note-removebg-preview.png');
   background-position: 30%;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
-/*number on the side*/
-.Anime a.nine:hover:before {
-  top: 0;
-}
-
-/*image title*/
-.Anime a.ten:hover:after {
-  top: 0;
-}.Anime a.ten:after { 
+.Anime a.ten:after{
   background-image: url('../../Assets/Image buttons/Dr._Stone_Logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50%;
+  background-position: 50% 0;
 }
 
-/*number on the side*/
-.Anime a.ten:hover:before {
-  top: 0;
+.Anime a.eleven:after {
+  background-image: url('../../Assets/Image buttons/Nichijou_logo.png');
+  background-position: 50% 0;
 }
 
-/*image title*/
-.Anime a.eleven:hover:after {
-  top: 0;
-}.Anime a.eleven:after { 
-  background-image: url('../../Assets/Image buttons/Dr._Stone_Logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
+.Anime a.twelve:after {
+  background-image: url('../../Assets/Image buttons/jujutsu-Kisen.png');
   background-position: 0;
 }
 
-/*number on the side*/
-.Anime a.eleven:hover:before {
-  top: 0;
-}
-
-/*image title*/
-.Anime a.twelve:hover:after {
-  top: 0;
-}.Anime a.twelve:after { 
-  background-image: url('../../Assets/Image buttons/jujutsu-Kisen.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0px;
-
-}
-
-/*number on the side*/
-.Anime a.twelve:hover:before {
-  top: 0;
-}
-
-/*image title*/
-.Anime a.thirteen:hover:after {
-  top: 0;
-}.Anime a.thirteen:after { 
+.Anime a.thirteen:after {
   background-image: url('../../Assets/Image buttons/demon-slayertitle.png');
-  background-repeat: no-repeat;
-  background-size: contain;
   background-position: 40%;
 }
 
-/*number on the side*/
-.Anime a.thirteen:hover:before {
+.Anime a:hover:before {
   top: 0;
+}
+
+.Anime a.one:before {
+  background-color: #C9AE5D;
+  color: #ffffff;
+}
+
+.Anime a.two:before {
+  background-color: #BEBEBE;
+}
+
+.Anime a.three:before {
+  background-color: #8B5A2B;
 }
 
 
@@ -353,7 +223,6 @@ border: 0.5px solid rgb(134, 134, 134);
   .Anime a {
     max-height: 60vh;
     max-width: 100vw;
-    transition: 1s;
   }
 }
 
