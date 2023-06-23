@@ -1,6 +1,7 @@
 # Perosnal Portfolio WebSite
 
 This is a personal project that showcases my various accounts and projects. The website is built using React, and it's primarily designed to display my work experience and skills in a visually appealing way.
+AbANDONED
 
 -------
 # Getting started
@@ -20,7 +21,7 @@ This website includes the following features:
 
 - Main page: This page displays a brief introduction about me, my accounts and other features on the website.
 - Projects page: This page showcases my projects, including a brief description, links to the source code on github.
-and many other various pages on the website ...
+and many other various pages on the website.....
 
 -----
 
@@ -29,9 +30,7 @@ and many other various pages on the website ...
 - React Framework
 - Javascript
 - HTML
-- CSS bootstrap
-
-will be planning on using Typescript and tailwind framework over the comming months within the personal website.
+- CSS
 
 --------
 
