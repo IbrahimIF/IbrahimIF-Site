@@ -1,10 +1,16 @@
-# Perosnal Portfolio WebSite
+![image](https://github.com/user-attachments/assets/4c442901-36d9-40b8-bffb-89ddf8412549)
 
-This is a personal project that showcases my various accounts and projects. The website is built using React, and it's primarily designed to display my work experience and skills in a visually appealing way.
-AbANDONED
 
--------
-# Getting started
+![Project Status](https://img.shields.io/badge/status-active-brightgreen)
+
+![Static Badge](https://img.shields.io/badge/made_wtih-React-blue)
+
+This is a project showcasing my skills, experience, and more about me.
+An easier way to understand who I am, what I do, what I can offer and my preferences.
+Highlighting my achievements through out my years And finally, it serves as a powerful first impression for others. [First Iteration]
+
+----
+## Getting started:
 
 To run this project locally, you'll need to have Node.js and npm installed on your computer. Once you have these installed, follow these steps:
 
@@ -13,27 +19,32 @@ To run this project locally, you'll need to have Node.js and npm installed on yo
 3. Run npm install to install all dependencies.
 4. Run npm start to start the development server.
 5. Open your web browser and navigate to http://localhost:3000 to see the website.
------
 
-# Features
+Above is for those who would want to run the repo itself.
+Below is the website link currently running on Vercel:
+> [IbrahimIF](https://personal-portfolio-website-one-puce.vercel.app/)
 
-This website includes the following features:
+------
+## Features:
 
-- Main page: This page displays a brief introduction about me, my accounts and other features on the website.
-- Projects page: This page showcases my projects, including a brief description, links to the source code on github.
+This Project includes
+- Hidden Secrets
+- About me section
+- Projects I have done
+- Experience 
+- The Anime I like
+- My Accounts
 and many other various pages on the website.....
 
+> [!NOTE] 
+> This project may or may not have been left to collect dust
+
 -----
+## Technologies and Tools Utilized
 
-# Coding Languages used
+[![My Skills](https://skillicons.dev/icons?i=react,js,html,css&perline=1)](https://skillicons.dev)
 
-- React Framework
-- Javascript
-- HTML
-- CSS
-
---------
-
-# License
+------
+## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
