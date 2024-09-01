@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/4c442901-36d9-40b8-bffb-89ddf8412549)
 
 
-![Project Status](https://img.shields.io/badge/status-active-brightgreen)
+![Project Status](https://img.shields.io/badge/status-paused-grey)
 
 ![Static Badge](https://img.shields.io/badge/made_wtih-React-blue)
 
@@ -40,7 +40,7 @@ and many other various pages on the website.....
 > This project may or may not have been left to collect dust
 
 -----
-## Technologies and Tools Utilised
+## Technologies and Tools Utilised:
 
 [![My Skills](https://skillicons.dev/icons?i=react,js,html,css,vercel,vscode&perline=1)](https://skillicons.dev)
 
