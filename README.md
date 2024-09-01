@@ -40,9 +40,9 @@ and many other various pages on the website.....
 > This project may or may not have been left to collect dust
 
 -----
-## Technologies and Tools Utilized
+## Technologies and Tools Utilised
 
-[![My Skills](https://skillicons.dev/icons?i=react,js,html,css,vercel&perline=1)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,js,html,css,vercel,vscode&perline=1)](https://skillicons.dev)
 
 ------
 ## License
