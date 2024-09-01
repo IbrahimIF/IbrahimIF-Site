@@ -3,7 +3,7 @@
 
 ![Project Status](https://img.shields.io/badge/status-paused-grey)
 
-![Static Badge](https://img.shields.io/badge/made_wtih-React-blue)
+![Static Badge](https://img.shields.io/badge/made_with-React-blue)
 
 This is a project showcasing my skills, experience, and more about me.
 An easier way to understand who I am, what I do, what I can offer and my preferences.
@@ -44,7 +44,4 @@ and many other various pages on the website.....
 
 [![My Skills](https://skillicons.dev/icons?i=react,js,html,css,vercel,vscode&perline=1)](https://skillicons.dev)
 
-------
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+-----
