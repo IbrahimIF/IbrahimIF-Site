@@ -42,6 +42,6 @@ and many other various pages on the website.....
 -----
 ## Technologies and Tools Utilised:
 
-[![My Skills](https://skillicons.dev/icons?i=react,js,html,css,vercel,vscode&perline=1)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,js,html,css,vercel,vscode&perline=2)](https://skillicons.dev)
 
 -----
